@@ -43,3 +43,44 @@ Task("Clean")
 * Change Dependency on Run-xUnit-Tests Task to include Clean Task
 * Run the build
 * Check the build output folder for the result
+
+* Then it is the same thing for NUnit and MSTest
+
+```
+Task("Run-NUnit-Tests")
+    .IsDependentOn("Build")
+    .Does(() =>
+{
+    NUnit3("./Source/**/bin/" + configuration + "/*.NUnitTests.dll", new NUnit3Settings {
+        Work = "./.build/TestResults"
+    });
+});
+```
+
+```
+///////////////////////////////////////////////////////////////////////////////
+// TOOLS
+///////////////////////////////////////////////////////////////////////////////
+#tool NUnit.Runners
+```
+
+```
+Task("Run-MSTest-Tests")
+    .IsDependentOn("Build")
+    .Does(() =>
+{
+    MSTest("./Source/**/bin/" + configuration + "/*.MSTests.dll", new MSTestSettings {
+        ArgumentCustomization = args => args.Append(string.Format("/resultsfile:{0}", "./.build/TestResults/MSTestResults.trx"))
+    });
+});
+```
+
+```
+Task("Test")
+    .IsDependentOn("Run-xUnit-Tests")
+    .IsDependentOn("Run-NUnit-Tests")
+    .IsDependentOn("Run-MSTest-Tests");
+
+Task("Default")
+  .IsDependentOn("Test");
+```

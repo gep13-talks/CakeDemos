@@ -39,3 +39,7 @@ Task("Clean")
     CleanDirectories(new[] { "./.build/TestResults"} );
 });
 ```
+
+* Change Dependency on Run-xUnit-Tests Task to include Clean Task
+* Run the build
+* Check the build output folder for the result

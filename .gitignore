@@ -238,3 +238,4 @@ _Pvt_Extensions
 # Cake specific
 tools/Cake/
 tools/nuget.exe
+tools/xunit.runner.console/

@@ -242,3 +242,5 @@ tools/xunit.runner.console/
 tools/NUnit*
 tools/OpenCover/
 tools/ReportGenerator/
+
+.build/

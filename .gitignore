@@ -240,3 +240,5 @@ tools/Cake/
 tools/nuget.exe
 tools/xunit.runner.console/
 tools/NUnit*
+tools/OpenCover/
+tools/ReportGenerator/

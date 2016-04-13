@@ -19,34 +19,5 @@
             // Assert
             Assert.IsNotNull(result);
         }
-
-        [TestMethod]
-        public void About()
-        {
-            // Arrange
-            var controller = new HomeController();
-
-            // Act
-            var result = controller.About() as ViewResult;
-
-            // Assert
-            if (result != null)
-            {
-                Assert.AreEqual("Your application description page.", result.ViewBag.Message);
-            }
-        }
-
-        [TestMethod]
-        public void Contact()
-        {
-            // Arrange
-            var controller = new HomeController();
-
-            // Act
-            var result = controller.Contact() as ViewResult;
-
-            // Assert
-            Assert.IsNotNull(result);
-        }
     }
 }

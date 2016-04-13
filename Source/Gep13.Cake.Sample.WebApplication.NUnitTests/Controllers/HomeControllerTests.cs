@@ -8,19 +8,6 @@
     public class HomeControllerTests
     {
         [Test]
-        public void Index()
-        {
-            // Arrange
-            var controller = new HomeController();
-
-            // Act
-            var result = controller.Index() as ViewResult;
-
-            // Assert
-            Assert.IsNotNull(result);
-        }
-
-        [Test]
         public void About()
         {
             // Arrange
@@ -34,19 +21,6 @@
             {
                 Assert.AreEqual("Your application description page.", result.ViewBag.Message);
             }
-        }
-
-        [Test]
-        public void Contact()
-        {
-            // Arrange
-            var controller = new HomeController();
-
-            // Act
-            var result = controller.Contact() as ViewResult;
-
-            // Assert
-            Assert.IsNotNull(result);
         }
     }
 }

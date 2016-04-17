@@ -36,11 +36,16 @@ Task("Run-xUnit-Tests")
 Task("Clean")
     .Does(() =>
 {
-    CleanDirectories(new[] { "./.build/TestResults"} );
+    CleanDirectories(new[] { "./.build/TestResults" });
 });
 ```
 
 * Change Dependency on Run-xUnit-Tests Task to include Clean Task
+
+```
+    .IsDependentOn("Clean")
+```
+
 * Run the build
 * Check the build output folder for the result
 
@@ -49,6 +54,7 @@ Task("Clean")
 ```
 Task("Run-NUnit-Tests")
     .IsDependentOn("Build")
+    .IsDependentOn("Clean")
     .Does(() =>
 {
     NUnit3("./Source/**/bin/" + configuration + "/*.NUnitTests.dll", new NUnit3Settings {
@@ -61,12 +67,13 @@ Task("Run-NUnit-Tests")
 ///////////////////////////////////////////////////////////////////////////////
 // TOOLS
 ///////////////////////////////////////////////////////////////////////////////
-#tool NUnit.Runners
+#tool NUnit.ConsoleRunner
 ```
 
 ```
 Task("Run-MSTest-Tests")
     .IsDependentOn("Build")
+    .IsDependentOn("Clean")
     .Does(() =>
 {
     MSTest("./Source/**/bin/" + configuration + "/*.MSTests.dll", new MSTestSettings {

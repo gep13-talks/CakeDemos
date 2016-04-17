@@ -16,10 +16,14 @@ Task("Build")
         .SetConfiguration(configuration)
         .WithProperty("Windows", "True")
         .WithProperty("TreatWarningsAsErrors", "True")
-        .UseToolVersion(MSBuildToolVersion.NET45)
+        .UseToolVersion(MSBuildToolVersion.VS2015)
         .SetVerbosity(Verbosity.Minimal)
         .SetNodeReuse(false));
 });
 ```
 
 * Change Dependency on Default Task to point at Build Task
+
+```
+  .IsDependentOn("Build");
+```

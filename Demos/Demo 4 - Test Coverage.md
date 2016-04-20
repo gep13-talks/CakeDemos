@@ -46,8 +46,8 @@ Task("Run-ReportGenerator")
 * Add Tools to top of file so that they are added to Tools folder
 
 ```
-#tool OpenCover
-#tool ReportGenerator
+#tool nuget:http://localhost:8081/repository/cake/?package=OpenCover
+#tool nuget:http://localhost:8081/repository/cake/?package=ReportGenerator
 ```
 
 * Same thing for MSTest and NUnit

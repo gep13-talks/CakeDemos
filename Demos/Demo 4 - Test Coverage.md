@@ -24,6 +24,24 @@ Task("Run-xUnit-Tests")
     );
 });
 ```
+* Extend Clean Task to include new output folder
+
+```
+CleanDirectories(new[] { "./.build/TestResults", "./.build/Coverage" });
+```
+
+* Add ReportGenerator Task
+
+```
+Task("Run-ReportGenerator")
+    .IsDependentOn("Test")
+    .Does(() =>
+{
+    ReportGenerator("./.build/Coverage/result.xml", "./.build/Coverage");
+});
+```
+
+* Change Default Task to take a dependency on Run-ReportGenerator
 
 * Add Tools to top of file so that they are added to Tools folder
 
@@ -37,6 +55,7 @@ Task("Run-xUnit-Tests")
 ```
 Task("Run-NUnit-Tests")
     .IsDependentOn("Build")
+    .IsDependentOn("Clean")
     .Does(() =>
 {
     var settings = new OpenCoverSettings {
@@ -58,6 +77,7 @@ Task("Run-NUnit-Tests")
 ```
 Task("Run-MSTest-Tests")
     .IsDependentOn("Build")
+    .IsDependentOn("Clean")
     .Does(() =>
 {
     var settings = new OpenCoverSettings {

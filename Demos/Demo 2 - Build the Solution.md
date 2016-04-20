@@ -1,11 +1,14 @@
 * `git checkout Demo2`
 * Add additional argument to top of file
 
+**demo2step1** - Additional argument
 ```
 var configuration = Argument("configuration", "Release");
 ```
 
 * Add a task for running MSBuild
+
+**demo2step2** - MSBuild Task
 
 ```
 Task("Build")

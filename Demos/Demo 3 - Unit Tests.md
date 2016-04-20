@@ -1,6 +1,7 @@
 * `git checkout Demo3`
 * Add task for running xUnit Tests
 
+**demo3step1** - XUnit Task
 ```
 Task("Run-xUnit-Tests")
     .IsDependentOn("Build")
@@ -21,6 +22,7 @@ Task("Run-xUnit-Tests")
   * adding preprocessor directive which will add the missing tool
 * We will do the latter
 
+**demo3step2** - XUnit Tool Resolution
 ```
 ///////////////////////////////////////////////////////////////////////////////
 // TOOLS
@@ -32,6 +34,7 @@ Task("Run-xUnit-Tests")
 * This was due to the output folder not existing, we need to create that as part of our build process
 * Add a Clean Task
 
+**demo3step3** - Clean Task
 ```
 Task("Clean")
     .Does(() =>
@@ -51,6 +54,7 @@ Task("Clean")
 
 * Then it is the same thing for NUnit and MSTest
 
+**demo3step4** - NUnit Task
 ```
 Task("Run-NUnit-Tests")
     .IsDependentOn("Build")
@@ -63,6 +67,7 @@ Task("Run-NUnit-Tests")
 });
 ```
 
+**demo3step5** - NUnit Tool Resolution
 ```
 ///////////////////////////////////////////////////////////////////////////////
 // TOOLS
@@ -70,6 +75,7 @@ Task("Run-NUnit-Tests")
 #tool nuget:http://localhost:8081/repository/cake/?package=NUnit.ConsoleRunner
 ```
 
+**demo3step6** - MSTest Task
 ```
 Task("Run-MSTest-Tests")
     .IsDependentOn("Build")
@@ -82,12 +88,17 @@ Task("Run-MSTest-Tests")
 });
 ```
 
+**demo3step7** - Top level Test Task
 ```
 Task("Test")
     .IsDependentOn("Run-xUnit-Tests")
     .IsDependentOn("Run-NUnit-Tests")
     .IsDependentOn("Run-MSTest-Tests");
+```
 
+* Update the default task to take a dependency on the new top level Test Task
+
+```
 Task("Default")
   .IsDependentOn("Test");
 ```

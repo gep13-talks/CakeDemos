@@ -1,6 +1,7 @@
 * `git checkout Demo5`
 * Add new task for NuGetPack
 
+**demo5step1** - NuGet Pack Task
 ```
 Task("Package")
     .IsDependentOn("Run-ReportGenerator")
@@ -41,6 +42,7 @@ Task("Package")
 
 * Extend Clean task to include new nuget output folder
 
+**demo5step2** - Extend Clean Task
 ```
 Task("Clean")
     .Does(() =>

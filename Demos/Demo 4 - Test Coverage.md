@@ -1,6 +1,7 @@
 * `git checkout Demo4`
 * Modify Existing Unit Test Task to include Coverage
 
+**demo4step1** - xUnit with OpenCover
 ```
 Task("Run-xUnit-Tests")
     .IsDependentOn("Build")
@@ -24,14 +25,17 @@ Task("Run-xUnit-Tests")
     );
 });
 ```
+
 * Extend Clean Task to include new output folder
 
+**demo4step2** - Extended Clean Task
 ```
 CleanDirectories(new[] { "./.build/TestResults", "./.build/Coverage" });
 ```
 
 * Add ReportGenerator Task
 
+**demo4step3** - ReportGenerator Task
 ```
 Task("Run-ReportGenerator")
     .IsDependentOn("Test")
@@ -45,6 +49,7 @@ Task("Run-ReportGenerator")
 
 * Add Tools to top of file so that they are added to Tools folder
 
+**demo4step4** - OpenCover and ReportGenerator Tool Resolution
 ```
 #tool nuget:http://localhost:8081/repository/cake/?package=OpenCover
 #tool nuget:http://localhost:8081/repository/cake/?package=ReportGenerator
@@ -52,6 +57,7 @@ Task("Run-ReportGenerator")
 
 * Same thing for MSTest and NUnit
 
+**demo4step5** - NUnit with OpenCover
 ```
 Task("Run-NUnit-Tests")
     .IsDependentOn("Build")
@@ -74,6 +80,7 @@ Task("Run-NUnit-Tests")
 });
 ```
 
+**demo4step6** - MSTest with OpenCover
 ```
 Task("Run-MSTest-Tests")
     .IsDependentOn("Build")

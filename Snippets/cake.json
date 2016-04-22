@@ -1,0 +1,283 @@
+{
+ "Demo5 - Step2": {
+  "prefix": "demo5step2",
+  "body": [
+   "CleanDirectories(new[] { \"./.build/TestResults\", \"./.build/Coverage\", \"./.build/nuget\" });"
+  ],
+  "description": "Extend Clean Task"
+ },
+ "Demo5 - Step1": {
+  "prefix": "demo5step1",
+  "body": [
+   "Task(\"Package\")",
+   "    .IsDependentOn(\"Run-ReportGenerator\")",
+   "    .Does(() =>",
+   "{",
+   "    var nuGetPackSettings   = new NuGetPackSettings {",
+   "        Id                      = \"Gep13.Cake.Sample.Common\",",
+   "        Version                 = \"0.1.0\",",
+   "        Title                   = \"Common Library used by Gep13.Cake.Sample Web Application\",",
+   "        Authors                 = new[] {\"gep13\"},",
+   "        Owners                  = new[] {\"gep13\"},",
+   "        Description             = \"The best Common Library you have ever seen\",",
+   "        ProjectUrl              = new Uri(\"https://github.com/gep13/CakeDemos\"),",
+   "        IconUrl                 = new Uri(\"https://raw.githubusercontent.com/cake-build/graphics/master/png/cake-small.png\"),",
+   "        LicenseUrl              = new Uri(\"https://github.com/gep13/CakeDemos/blob/master/LICENSE\"),",
+   "        Copyright               = \"gep13 2016\",",
+   "        ReleaseNotes            = new [] {\"Bug fixes\", \"Issue fixes\", \"Typos\"},",
+   "        Tags                    = new [] {\"Gep13\", \"Cake\", \"Sample\"},",
+   "        RequireLicenseAcceptance= false,",
+   "        Symbols                 = false,",
+   "        NoPackageAnalysis       = true,",
+   "        Files                   = new [] {",
+   "            new NuSpecContent {Source = \"Gep13.Cake.Sample.Common.dll\", Target = \"bin\"},",
+   "        },",
+   "        BasePath                = \"./Source/Gep13.Cake.Sample.Common/bin/\" + configuration,",
+   "        OutputDirectory         = \"./.build/nuget\"",
+   "    };",
+   "",
+   "    NuGetPack(nuGetPackSettings);",
+   "});"
+  ],
+  "description": "NuGet Pack Task"
+ },
+ "Demo4 - Step3": {
+  "prefix": "demo4step3",
+  "body": [
+   "Task(\"Run-ReportGenerator\")",
+   "    .IsDependentOn(\"Test\")",
+   "    .Does(() =>",
+   "{",
+   "    ReportGenerator(\"./.build/Coverage/result.xml\", \"./.build/Coverage\");",
+   "});"
+  ],
+  "description": "ReportGenerator Task"
+ },
+ "Demo4 - Step2": {
+  "prefix": "demo4step2",
+  "body": [
+   "CleanDirectories(new[] { \"./.build/TestResults\", \"./.build/Coverage\" });"
+  ],
+  "description": "Extended Clean Task"
+ },
+ "Demo4 - Step6": {
+  "prefix": "demo4step6",
+  "body": [
+   "Task(\"Run-MSTest-Tests\")",
+   "    .IsDependentOn(\"Build\")",
+   "    .IsDependentOn(\"Clean\")",
+   "    .Does(() =>",
+   "{",
+   "    var settings = new OpenCoverSettings {",
+   "        ArgumentCustomization = args => args.Append(\"-mergeoutput\")",
+   "    };",
+   "",
+   "    OpenCover(tool => {",
+   "        tool.MSTest(\"./Source/**/bin/\" + configuration + \"/*.MSTests.dll\", new MSTestSettings {",
+   "        ArgumentCustomization = args => args.Append(string.Format(\"/resultsfile:{0}\", \"./.build/TestResults/MSTestResults.trx\"))",
+   "        });",
+   "    },",
+   "    new FilePath(\"./.build/Coverage/result.xml\"),",
+   "    settings",
+   "        .WithFilter(\"+[*]* -[xunit.*]* -[*.NUnitTests]* -[*.MSTests]* -[*.xUnitTests]*\")",
+   "    );",
+   "});"
+  ],
+  "description": "MSTest with OpenCover"
+ },
+ "Demo4 - Step 5": {
+  "prefix": "demo4step5",
+  "body": [
+   "Task(\"Run-NUnit-Tests\")",
+   "    .IsDependentOn(\"Build\")",
+   "    .IsDependentOn(\"Clean\")",
+   "    .Does(() =>",
+   "{",
+   "    var settings = new OpenCoverSettings {",
+   "        ArgumentCustomization = args => args.Append(\"-mergeoutput\")",
+   "    };",
+   "",
+   "    OpenCover(tool => {",
+   "        tool.NUnit3(\"./Source/**/bin/\" + configuration + \"/*.NUnitTests.dll\", new NUnit3Settings {",
+   "        Work = \"./.build/TestResults\"",
+   "        });",
+   "    },",
+   "    new FilePath(\"./.build/Coverage/result.xml\"),",
+   "    settings",
+   "        .WithFilter(\"+[*]* -[xunit.*]* -[*.NUnitTests]* -[*.MSTests]* -[*.xUnitTests]*\")",
+   "    );",
+   "});"
+  ],
+  "description": "NUnit with OpenCover"
+ },
+ "Demo4 - Step4": {
+  "prefix": "demo4step4",
+  "body": [
+   "#tool nuget:http://localhost:8081/repository/cake/?package=OpenCover",
+   "#tool nuget:http://localhost:8081/repository/cake/?package=ReportGenerator"
+  ],
+  "description": "OpenCover and ReportGenerator Tool Resolution"
+ },
+ "Demo4 - Step1": {
+  "prefix": "demo4step1",
+  "body": [
+   "Task(\"Run-xUnit-Tests\")",
+   "    .IsDependentOn(\"Build\")",
+   "    .IsDependentOn(\"Clean\")",
+   "    .Does(() =>",
+   "{",
+   "    var settings = new OpenCoverSettings {",
+   "        ArgumentCustomization = args => args.Append(\"-mergeoutput\")",
+   "    };",
+   "",
+   "    OpenCover(tool => {",
+   "        tool.XUnit2(\"./Source/**/bin/\" + configuration + \"/*.xUnitTests.dll\", new XUnit2Settings {",
+   "            OutputDirectory = \"./.build/TestResults\",",
+   "            XmlReportV1 = true,",
+   "            NoAppDomain = true",
+   "        });",
+   "    },",
+   "    new FilePath(\"./.build/Coverage/result.xml\"),",
+   "    settings",
+   "        .WithFilter(\"+[*]* -[xunit.*]* -[*.NUnitTests]* -[*.MSTests]* -[*.xUnitTests]*\")",
+   "    );",
+   "});"
+  ],
+  "description": "xUnit with OpenCover"
+ },
+ "Demo3 - Step7": {
+  "prefix": "demo3step7",
+  "body": [
+   "Task(\"Test\")",
+   "    .IsDependentOn(\"Run-xUnit-Tests\")",
+   "    .IsDependentOn(\"Run-NUnit-Tests\")",
+   "    .IsDependentOn(\"Run-MSTest-Tests\");"
+  ],
+  "description": "Top level Test Task"
+ },
+ "Demo3 - Step6": {
+  "prefix": "demo3step6",
+  "body": [
+   "Task(\"Run-MSTest-Tests\")",
+   "    .IsDependentOn(\"Build\")",
+   "    .IsDependentOn(\"Clean\")",
+   "    .Does(() =>",
+   "{",
+   "    MSTest(\"./Source/**/bin/\" + configuration + \"/*.MSTests.dll\", new MSTestSettings {",
+   "        ArgumentCustomization = args => args.Append(string.Format(\"/resultsfile:{0}\", \"./.build/TestResults/MSTestResults.trx\"))",
+   "    });",
+   "});"
+  ],
+  "description": "MSTest Task"
+ },
+ "Demo3 - Step5": {
+  "prefix": "demo3step5",
+  "body": [
+   "#tool nuget:http://localhost:8081/repository/cake/?package=NUnit.ConsoleRunner"
+  ],
+  "description": "NUnit Tool Resolution"
+ },
+ "Demo3 - Step4": {
+  "prefix": "demo3step4",
+  "body": [
+   "Task(\"Run-NUnit-Tests\")",
+   "    .IsDependentOn(\"Build\")",
+   "    .IsDependentOn(\"Clean\")",
+   "    .Does(() =>",
+   "{",
+   "    NUnit3(\"./Source/**/bin/\" + configuration + \"/*.NUnitTests.dll\", new NUnit3Settings {",
+   "        Work = \"./.build/TestResults\"",
+   "    });",
+   "});"
+  ],
+  "description": "NUnit Task"
+ },
+ "Demo3 - Step3": {
+  "prefix": "demo3step3",
+  "body": [
+   "Task(\"Clean\")",
+   "    .Does(() =>",
+   "{",
+   "    CleanDirectories(new[] { \"./.build/TestResults\" });",
+   "});"
+  ],
+  "description": "Clean Task"
+ },
+ "Demo3 - Step2": {
+  "prefix": "demo3step2",
+  "body": [
+   "///////////////////////////////////////////////////////////////////////////////",
+   "// TOOLS",
+   "///////////////////////////////////////////////////////////////////////////////",
+   "#tool nuget:http://localhost:8081/repository/cake/?package=xunit.runner.console",
+   ""
+  ],
+  "description": "XUnit Tool Resolution"
+ },
+ "Demo3 - Step1": {
+  "prefix": "demo3step1",
+  "body": [
+   "Task(\"Run-xUnit-Tests\")",
+   "    .IsDependentOn(\"Build\")",
+   "    .Does(() =>",
+   "{",
+   "    XUnit2(\"./Source/**/bin/\" + configuration + \"/*.xUnitTests.dll\", new XUnit2Settings {",
+   "        OutputDirectory = \"./.build/TestResults\",",
+   "        XmlReportV1 = true,",
+   "        NoAppDomain = true",
+   "    });",
+   "});"
+  ],
+  "description": "XUnit Task"
+ },
+ "Demo2 - Step2": {
+  "prefix": "demo2step2",
+  "body": [
+   "Task(\"Build\")",
+   "    .IsDependentOn(\"NuGet-Package-Restore\")",
+   "    .Does(() =>",
+   "{",
+   "    MSBuild(\"./Source/Gep13.Cake.Sample.WebApplication.sln\", new MSBuildSettings()",
+   "        .SetConfiguration(configuration)",
+   "        .WithProperty(\"Windows\", \"True\")",
+   "        .WithProperty(\"TreatWarningsAsErrors\", \"True\")",
+   "        .UseToolVersion(MSBuildToolVersion.VS2015)",
+   "        .SetVerbosity(Verbosity.Minimal)",
+   "        .SetNodeReuse(false));",
+   "});"
+  ],
+  "description": "MSBuild Task"
+ },
+ "Demo2 - Step1": {
+  "prefix": "demo2step1",
+  "body": [
+   "var configuration = Argument(\"configuration\", \"Release\");"
+  ],
+  "description": "Additional argument"
+ },
+ "Demo1 - Step2": {
+  "prefix": "demo1step2",
+  "body": [
+   "NuGetRestore(\"./Source/Gep13.Cake.Sample.WebApplication.sln\");"
+  ],
+  "description": "NuGet Package Restore Step"
+ },
+ "Demo1 - Step1": {
+  "prefix": "demo1step1",
+  "body": [
+   "var target = Argument(\"target\", \"Default\");",
+   "",
+   "Task(\"NuGet-Package-Restore\")",
+   "    .Does(() =>",
+   "{",
+   "",
+   "});",
+   "",
+   "Task(\"Default\")",
+   "  .IsDependentOn(\"NuGet-Package-Restore\");",
+   "",
+   "RunTarget(target);"
+  ],
+  "description": "Basic Cake Template"
+ }
+}

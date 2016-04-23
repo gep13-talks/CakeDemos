@@ -18,5 +18,34 @@
             // Assert
             Assert.NotNull(result);
         }
+
+        [Fact]
+        public void About()
+        {
+            // Arrange
+            var controller = new HomeController();
+
+            // Act
+            var result = controller.About() as ViewResult;
+
+            // Assert
+            if (result != null)
+            {
+                Assert.Equal("Your application description page.", result.ViewBag.Message);
+            }
+        }
+
+        [Fact]
+        public void Index()
+        {
+            // Arrange
+            var controller = new HomeController();
+
+            // Act
+            var result = controller.Index() as ViewResult;
+
+            // Assert
+            Assert.NotNull(result);
+        }
     }
 }

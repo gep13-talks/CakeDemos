@@ -24,15 +24,3 @@ Demo 3 - Unit Tests
 
 * Run the build
 * Check the build output folder for the result
-
-* Then it is the same thing for NUnit and MSTest
-
-  **demo3step4** - NUnit Task
-
-  **demo3step5** - NUnit Tool Resolution
-
-  **demo3step6** - MSTest Task
-
-  **demo3step7** - Top level Test Task
-
-* Update the default task to take a dependency on the new top level Test Task

@@ -1,6 +1,5 @@
 # Demo 2 - Build the Solution
 
-* `git checkout Demo2`
 * Add additional argument to top of file
 
   **demo2step1** - Additional argument

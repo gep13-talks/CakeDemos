@@ -1,6 +1,5 @@
 Demo 3 - Unit Tests
 
-* `git checkout Demo3`
 * Add task for running xUnit Tests
 
   **demo3step1** - XUnit Task

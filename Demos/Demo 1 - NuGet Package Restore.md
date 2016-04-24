@@ -1,6 +1,5 @@
 # Demo 1 - NuGet Package Restore
 
-* `git checkout Demo1`
 * First of all we are going to need a bootstrapper.  Normally, when on Windows, this would be done by doing this:
 
 ```

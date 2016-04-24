@@ -1,6 +1,5 @@
 # Demo 4 - NuGet Pack
 
-* `git checkout Demo4`
 * Add new task for NuGetPack
 
   **demo4step1** - NuGet Pack Task

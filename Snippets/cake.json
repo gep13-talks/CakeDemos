@@ -10,7 +10,7 @@
   "prefix": "demo4step1",
   "body": [
    "Task(\"Package\")",
-   "    .IsDependentOn(\"Run-ReportGenerator\")",
+   "    .IsDependentOn(\"Run-xUnit-Tests\")",
    "    .Does(() =>",
    "{",
    "    var nuGetPackSettings   = new NuGetPackSettings {",

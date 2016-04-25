@@ -2,9 +2,6 @@
 // TOOLS
 ///////////////////////////////////////////////////////////////////////////////
 #tool nuget:http://localhost:8081/repository/cake/?package=xunit.runner.console
-#tool nuget:http://localhost:8081/repository/cake/?package=NUnit.ConsoleRunner
-#tool nuget:http://localhost:8081/repository/cake/?package=OpenCover
-#tool nuget:http://localhost:8081/repository/cake/?package=ReportGenerator
 
 var target = Argument("target", "Default");
 var configuration = Argument("configuration", "Release");

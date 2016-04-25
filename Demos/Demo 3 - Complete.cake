@@ -2,7 +2,6 @@
 // TOOLS
 ///////////////////////////////////////////////////////////////////////////////
 #tool nuget:http://localhost:8081/repository/cake/?package=xunit.runner.console
-#tool nuget:http://localhost:8081/repository/cake/?package=NUnit.ConsoleRunner
 
 var target = Argument("target", "Default");
 var configuration = Argument("configuration", "Release");

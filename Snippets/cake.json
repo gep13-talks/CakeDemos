@@ -2,7 +2,7 @@
  "Demo4 - Step2": {
   "prefix": "demo4step2",
   "body": [
-   "CleanDirectories(new[] { \"./.build/TestResults\", \"./.build/Coverage\", \"./.build/nuget\" });"
+   "CleanDirectories(new[] { \"./.build/TestResults\", \"./.build/nuget\" });"
   ],
   "description": "Extend Clean Task"
  },

@@ -44,32 +44,7 @@ Task("Run-xUnit-Tests")
     });
 });
 
-Task("Run-NUnit-Tests")
-    .IsDependentOn("Build")
-    .IsDependentOn("Clean")
-    .Does(() =>
-{
-    NUnit3("./Source/**/bin/" + configuration + "/*.NUnitTests.dll", new NUnit3Settings {
-        Work = "./.build/TestResults"
-    });
-});
-
-Task("Run-MSTest-Tests")
-    .IsDependentOn("Build")
-    .IsDependentOn("Clean")
-    .Does(() =>
-{
-    MSTest("./Source/**/bin/" + configuration + "/*.MSTests.dll", new MSTestSettings {
-        ArgumentCustomization = args => args.Append(string.Format("/resultsfile:{0}", "./.build/TestResults/MSTestResults.trx"))
-    });
-});
-
-Task("Test")
-    .IsDependentOn("Run-xUnit-Tests")
-    .IsDependentOn("Run-NUnit-Tests")
-    .IsDependentOn("Run-MSTest-Tests");
-
 Task("Default")
-  .IsDependentOn("Test");
+  .IsDependentOn("Run-xUnit-Tests");
 
 RunTarget(target);

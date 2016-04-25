@@ -31,7 +31,7 @@ Task("Build")
 Task("Clean")
     .Does(() =>
 {
-    CleanDirectories(new[] { "./.build/TestResults", "./.build/Coverage", "./.build/nuget" });
+    CleanDirectories(new[] { "./.build/TestResults", "./.build/nuget" });
 });
 
 Task("Run-xUnit-Tests")
@@ -39,77 +39,15 @@ Task("Run-xUnit-Tests")
     .IsDependentOn("Clean")
     .Does(() =>
 {
-    var settings = new OpenCoverSettings {
-        ArgumentCustomization = args => args.Append("-mergeoutput")
-    };
-
-    OpenCover(tool => {
-        tool.XUnit2("./Source/**/bin/" + configuration + "/*.xUnitTests.dll", new XUnit2Settings {
-            OutputDirectory = "./.build/TestResults",
-            XmlReportV1 = true,
-            NoAppDomain = true
-        });
-    },
-    new FilePath("./.build/Coverage/result.xml"),
-    settings
-        .WithFilter("+[*]* -[xunit.*]* -[*.NUnitTests]* -[*.MSTests]* -[*.xUnitTests]*")
-    );
+    XUnit2("./Source/**/bin/" + configuration + "/*.xUnitTests.dll", new XUnit2Settings {
+        OutputDirectory = "./.build/TestResults",
+        XmlReportV1 = true,
+        NoAppDomain = true
+    });
 });
-
-Task("Run-NUnit-Tests")
-    .IsDependentOn("Build")
-    .IsDependentOn("Clean")
-    .Does(() =>
-{
-    var settings = new OpenCoverSettings {
-        ArgumentCustomization = args => args.Append("-mergeoutput")
-    };
-
-    OpenCover(tool => {
-        tool.NUnit3("./Source/**/bin/" + configuration + "/*.NUnitTests.dll", new NUnit3Settings {
-        Work = "./.build/TestResults"
-        });
-    },
-    new FilePath("./.build/Coverage/result.xml"),
-    settings
-        .WithFilter("+[*]* -[xunit.*]* -[*.NUnitTests]* -[*.MSTests]* -[*.xUnitTests]*")
-    );
-});
-
-Task("Run-MSTest-Tests")
-    .IsDependentOn("Build")
-    .IsDependentOn("Clean")
-    .Does(() =>
-{
-    var settings = new OpenCoverSettings {
-        ArgumentCustomization = args => args.Append("-mergeoutput")
-    };
-
-    OpenCover(tool => {
-        tool.MSTest("./Source/**/bin/" + configuration + "/*.MSTests.dll", new MSTestSettings {
-        ArgumentCustomization = args => args.Append(string.Format("/resultsfile:{0}", "./.build/TestResults/MSTestResults.trx"))
-        });
-    },
-    new FilePath("./.build/Coverage/result.xml"),
-    settings
-        .WithFilter("+[*]* -[xunit.*]* -[*.NUnitTests]* -[*.MSTests]* -[*.xUnitTests]*")
-    );
-});
-
-Task("Run-ReportGenerator")
-    .IsDependentOn("Test")
-    .Does(() =>
-{
-    ReportGenerator("./.build/Coverage/result.xml", "./.build/Coverage");
-});
-
-Task("Test")
-    .IsDependentOn("Run-xUnit-Tests")
-    .IsDependentOn("Run-NUnit-Tests")
-    .IsDependentOn("Run-MSTest-Tests");
 
 Task("Package")
-    .IsDependentOn("Run-ReportGenerator")
+    .IsDependentOn("Run-xUnit-Tests")
     .Does(() =>
 {
     var nuGetPackSettings   = new NuGetPackSettings {

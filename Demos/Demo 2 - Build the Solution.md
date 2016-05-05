@@ -8,4 +8,8 @@
 
   **demo2step2** - MSBuild Task
 
+* Add a more complicated MSBuild Alias, showing ability to add properties
+
+  **demo2step3** - MSBuild Task with Settings
+
 * Change Dependency on Default Task to point at Build Task

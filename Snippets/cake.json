@@ -1,5 +1,5 @@
 {
- "Demo4 - Step2": {
+  "Demo4 - Step2": {
   "prefix": "demo4step2",
   "body": [
    "CleanDirectories(new[] { \"./.build/TestResults\", \"./.build/nuget\" });"
@@ -79,6 +79,19 @@
   ],
   "description": "XUnit Task"
  },
+ "Demo2 - Step3": {
+  "prefix": "demo2step3",
+  "body": [
+   "MSBuild(\"./Source/Gep13.Cake.Sample.WebApplication.sln\", new MSBuildSettings()",
+   "    .SetConfiguration(configuration)",
+   "    .WithProperty(\"Windows\", \"True\")",
+   "    .WithProperty(\"TreatWarningsAsErrors\", \"True\")",
+   "    .UseToolVersion(MSBuildToolVersion.VS2015)",
+   "    .SetVerbosity(Verbosity.Minimal)",
+   "    .SetNodeReuse(false));"
+  ],
+  "description": "MSBuild Task with Settings"
+ },
  "Demo2 - Step2": {
   "prefix": "demo2step2",
   "body": [
@@ -86,13 +99,7 @@
    "    .IsDependentOn(\"NuGet-Package-Restore\")",
    "    .Does(() =>",
    "{",
-   "    MSBuild(\"./Source/Gep13.Cake.Sample.WebApplication.sln\", new MSBuildSettings()",
-   "        .SetConfiguration(configuration)",
-   "        .WithProperty(\"Windows\", \"True\")",
-   "        .WithProperty(\"TreatWarningsAsErrors\", \"True\")",
-   "        .UseToolVersion(MSBuildToolVersion.VS2015)",
-   "        .SetVerbosity(Verbosity.Minimal)",
-   "        .SetNodeReuse(false));",
+   "    MSBuild(\"./Source/Gep13.Cake.Sample.WebApplication.sln\");",
    "});"
   ],
   "description": "MSBuild Task"

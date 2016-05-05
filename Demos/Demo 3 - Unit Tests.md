@@ -1,4 +1,4 @@
-Demo 3 - Unit Tests
+# Demo 3 - Unit Tests
 
 * Add task for running xUnit Tests
 

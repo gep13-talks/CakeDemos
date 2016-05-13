@@ -1,5 +1,5 @@
 {
-  "Demo4 - Step2": {
+ "Demo4 - Step2": {
   "prefix": "demo4step2",
   "body": [
    "CleanDirectories(new[] { \"./.build/TestResults\", \"./.build/nuget\" });"
@@ -41,8 +41,8 @@
   ],
   "description": "NuGet Pack Task"
  },
- "Demo3 - Step3": {
-  "prefix": "demo3step3",
+ "Demo3 - Step4": {
+  "prefix": "demo3step4",
   "body": [
    "Task(\"Clean\")",
    "    .Does(() =>",
@@ -52,16 +52,23 @@
   ],
   "description": "Clean Task"
  },
+  "Demo3 - Step3": {
+  "prefix": "demo3step3",
+  "body": [
+   "#tool nuget:http://localhost:8081/repository/cake/?package=xunit.runner.console"
+  ],
+  "description": "Local XUnit Tool Resolution"
+ },
  "Demo3 - Step2": {
   "prefix": "demo3step2",
   "body": [
    "///////////////////////////////////////////////////////////////////////////////",
    "// TOOLS",
    "///////////////////////////////////////////////////////////////////////////////",
-   "#tool nuget:http://localhost:8081/repository/cake/?package=xunit.runner.console",
+   "#tool nuget:?package=xunit.runner.console",
    ""
   ],
-  "description": "XUnit Tool Resolution"
+  "description": "Normal XUnit Tool Resolution"
  },
  "Demo3 - Step1": {
   "prefix": "demo3step1",

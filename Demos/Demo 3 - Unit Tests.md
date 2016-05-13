@@ -11,7 +11,11 @@
   * adding preprocessor directive which will add the missing tool
 * We will do the latter
 
-  **demo3step2** - XUnit Tool Resolution
+  **demo3step2** - Normal XUnit Tool Resolution
+
+* Note that we will use a slightly modified version
+
+  **demo3step3** - Local XUnit Tool Resolution
 
 * Try to run the build, witness it fail.  Man, we just can't catch a break!
 * This was due to the output folder not existing, we need to create that as part of our build process

@@ -6,9 +6,7 @@ This talk was first given at [Aberdeen Developers .Net User Group on Thursday 21
 
 **NOTE:** If you want to see the code and demos that were provided at this presentation, please ensure you use the [adnuguk tag](https://github.com/gep13/CakeDemos/releases/tag/adnuguk).
 
-// TODO: Update with link to slides once complete
-
-It was then given at [DDD Scotland 2016](http://ddd.scot/) on 14th May 2016.  The slides for the talk can be found here.
+It was then given at [DDD Scotland 2016](http://ddd.scot/) on 14th May 2016.  The slides for the talk can be found [here](http://www.slideshare.net/gep13/having-your-cake-and-eating-it-too-dddscotland).
 
 **NOTE:** If you want to see the code and demos that were provided at this presentation, please ensure you use the [DDDScot2016 tag](https://github.com/gep13/CakeDemos/releases/tag/DDDScot2016).
 

@@ -86,6 +86,31 @@
   ],
   "description": "XUnit Task"
  },
+ "Demo2 - Step4": {
+  "prefix": "demo2step4",
+  "body": [
+   "if(IsRunningOnUnix())",
+   "{",
+   "    XBuild(\"./Source/Gep13.Cake.Sample.WebApplication.sln\", new XBuildSettings()",
+   "        .SetConfiguration(configuration)",
+   "        .WithProperty(\"POSIX\", \"True\")",
+   "        .WithProperty(\"TreatWarningsAsErrors\", \"True\")",
+   "        .SetVerbosity(Verbosity.Minimal)",
+   "    );",
+   "}",
+   "else",
+   "{",
+   "    MSBuild(\"./Source/Gep13.Cake.Sample.WebApplication.sln\", new MSBuildSettings()",
+   "        .SetConfiguration(configuration)",
+   "        .WithProperty(\"Windows\", \"True\")",
+   "        .WithProperty(\"TreatWarningsAsErrors\", \"True\")",
+   "        .UseToolVersion(MSBuildToolVersion.VS2015)",
+   "        .SetVerbosity(Verbosity.Minimal)",
+   "        .SetNodeReuse(false));",
+   "}"
+  ],
+  "description": "Cross Platform Build Step"
+ },
  "Demo2 - Step3": {
   "prefix": "demo2step3",
   "body": [

@@ -13,3 +13,5 @@
   **demo2step3** - MSBuild Task with Settings
 
 * Change Dependency on Default Task to point at Build Task
+
+  **demo2step4** - Cross Platform Build Step

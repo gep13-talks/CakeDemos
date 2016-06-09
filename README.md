@@ -10,8 +10,6 @@ It was then given at [DDD Scotland 2016](http://ddd.scot/) on 14th May 2016.  Th
 
 **NOTE:** If you want to see the code and demos that were provided at this presentation, please ensure you use the [DDDScot2016 tag](https://github.com/gep13/CakeDemos/releases/tag/DDDScot2016).
 
-// TODO: Update with link to slides once complete
-
-It was then given at [NDC Oslo](http://ndcoslo.com/) on 9th June 2016.  The slides for the talk can be found here.
+It was then given at [NDC Oslo](http://ndcoslo.com/) on 9th June 2016.  The slides for the talk can be found [here](http://www.slideshare.net/gep13/having-your-cake-and-eating-it-too-ndc-oslo-2016).
 
 **NOTE:** If you want to see the code and demos that were provided at this presentation, please ensure you use the [NDCOslo2016 tag](https://github.com/gep13/CakeDemos/releases/tag/NDCOslo2016).

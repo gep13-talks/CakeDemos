@@ -52,13 +52,6 @@
   ],
   "description": "Clean Task"
  },
-  "Demo3 - Step3": {
-  "prefix": "demo3step3",
-  "body": [
-   "#tool nuget:http://localhost:8081/repository/cake/?package=xunit.runner.console"
-  ],
-  "description": "Local XUnit Tool Resolution"
- },
  "Demo3 - Step2": {
   "prefix": "demo3step2",
   "body": [
@@ -68,7 +61,7 @@
    "#tool nuget:?package=xunit.runner.console",
    ""
   ],
-  "description": "Normal XUnit Tool Resolution"
+  "description": "XUnit Tool Resolution"
  },
  "Demo3 - Step1": {
   "prefix": "demo3step1",

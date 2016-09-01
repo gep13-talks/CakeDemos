@@ -1,7 +1,7 @@
 ///////////////////////////////////////////////////////////////////////////////
 // TOOLS
 ///////////////////////////////////////////////////////////////////////////////
-#tool nuget:http://localhost:8081/repository/cake/?package=xunit.runner.console
+#tool nuget:?package=xunit.runner.console
 
 var target = Argument("target", "Default");
 var configuration = Argument("configuration", "Release");

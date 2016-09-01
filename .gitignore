@@ -241,4 +241,4 @@ tools/Cake.CoreCLR/
 tools/nuget.exe
 tools/xunit.runner.console/
 
-.build/
+BuildArtifacts/

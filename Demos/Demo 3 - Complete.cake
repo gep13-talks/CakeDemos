@@ -28,7 +28,7 @@ Task("Build")
 Task("Clean")
     .Does(() =>
 {
-    CleanDirectories(new[] { "./.build/TestResults" });
+    CleanDirectories(new[] { "./BuildArtifacts/TestResults" });
 });
 
 Task("Run-xUnit-Tests")
@@ -37,7 +37,7 @@ Task("Run-xUnit-Tests")
     .Does(() =>
 {
     XUnit2("./Source/**/bin/" + configuration + "/*.xUnitTests.dll", new XUnit2Settings {
-        OutputDirectory = "./.build/TestResults",
+        OutputDirectory = "./BuildArtifacts/TestResults",
         XmlReportV1 = true,
         NoAppDomain = true
     });

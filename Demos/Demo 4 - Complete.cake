@@ -28,7 +28,7 @@ Task("Build")
 Task("Clean")
     .Does(() =>
 {
-    CleanDirectories(new[] { "./.build/TestResults", "./.build/nuget" });
+    CleanDirectories(new[] { "./BuildArtifacts/TestResults", "./BuildArtifacts/nuget" });
 });
 
 Task("Run-xUnit-Tests")
@@ -37,7 +37,7 @@ Task("Run-xUnit-Tests")
     .Does(() =>
 {
     XUnit2("./Source/**/bin/" + configuration + "/*.xUnitTests.dll", new XUnit2Settings {
-        OutputDirectory = "./.build/TestResults",
+        OutputDirectory = "./BuildArtifacts/TestResults",
         XmlReportV1 = true,
         NoAppDomain = true
     });
@@ -67,7 +67,7 @@ Task("Package")
             new NuSpecContent {Source = "Gep13.Cake.Sample.Common.dll", Target = "bin"},
         },
         BasePath                = "./Source/Gep13.Cake.Sample.Common/bin/" + configuration,
-        OutputDirectory         = "./.build/nuget"
+        OutputDirectory         = "./BuildArtifacts/nuget"
     };
 
     NuGetPack(nuGetPackSettings);

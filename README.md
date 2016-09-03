@@ -16,7 +16,7 @@ Demo Repository for showing usage of the [Cake](http://cakebuild.net/) build aut
 
 **NOTE:** If you want to see the code and demos that were provided at this presentation, please ensure you use the [NDCOslo2016 tag](https://github.com/gep13/CakeDemos/releases/tag/NDCOslo2016).
 
-* It was then given at []() on 3rd September 2016.  The slides for the talk can be found [here](http://www.slideshare.net/gep13/a-piece-of-cake-ddd11-reading).
+* It was then given at [DDD11](http://developerdeveloperdeveloper.com/) on 3rd September 2016.  The slides for the talk can be found [here](http://www.slideshare.net/gep13/a-piece-of-cake-ddd11-reading).
 
 **NOTE:** If you want to see the code and demos that were provided at this presentation, please ensure you use the [DDD11 tag](https://github.com/gep13/CakeDemos/releases/tag/DDD11)
 

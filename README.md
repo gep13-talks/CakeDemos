@@ -2,6 +2,24 @@
 
 Demo Repository for showing usage of the [Cake](http://cakebuild.net/) build automation and orchestration tool.
 
+# Presentations
+
+* This talk was first given at [Aberdeen Developers .Net User Group on Thursday 21st April 2016](http://www.aberdeendevelopers.co.uk/april-2016-meeting-gary-ewan-park/).  The slides for the talk can be found [here](http://www.slideshare.net/gep13/having-your-cake-and-eating-it-too).
+
+**NOTE:** If you want to see the code and demos that were provided at this presentation, please ensure you use the [adnuguk tag](https://github.com/gep13/CakeDemos/releases/tag/adnuguk).
+
+* It was then given at [DDD Scotland 2016](http://ddd.scot/) on 14th May 2016.  The slides for the talk can be found [here](http://www.slideshare.net/gep13/having-your-cake-and-eating-it-too-dddscotland).
+
+**NOTE:** If you want to see the code and demos that were provided at this presentation, please ensure you use the [DDDScot2016 tag](https://github.com/gep13/CakeDemos/releases/tag/DDDScot2016).
+
+* It was then given at [NDC Oslo](http://ndcoslo.com/) on 9th June 2016.  The slides for the talk can be found [here](http://www.slideshare.net/gep13/having-your-cake-and-eating-it-too-ndc-oslo-2016).
+
+**NOTE:** If you want to see the code and demos that were provided at this presentation, please ensure you use the [NDCOslo2016 tag](https://github.com/gep13/CakeDemos/releases/tag/NDCOslo2016).
+
+* It was then given at []() on 3rd September 2016.  The slides for the talk can be found [here](http://www.slideshare.net/gep13/a-piece-of-cake-ddd11-reading).
+
+**NOTE:** If you want to see the code and demos that were provided at this presentation, please ensure you use the [DDD11 tag](https://github.com/gep13/CakeDemos/releases/tag/DDD11)
+
 # Notes
 
 In order to run this demo, the following infrastructure needs to be in place (this is due to the fact that the demo is designed to be run offline, with no external network connection).
@@ -76,17 +94,3 @@ In order to run this demo, the following infrastructure needs to be in place (th
   * xunit.runner.console
 
 **NOTE:** If you don't want to use a local setup, simply delete the cake.config file to go directly to the internet.  You will also need to remove the local VSCode configuration which is specific to Cake.
-
-# Presentations
-
-This talk was first given at [Aberdeen Developers .Net User Group on Thursday 21st April 2016](http://www.aberdeendevelopers.co.uk/april-2016-meeting-gary-ewan-park/).  The slides for the talk can be found [here](http://www.slideshare.net/gep13/having-your-cake-and-eating-it-too).
-
-**NOTE:** If you want to see the code and demos that were provided at this presentation, please ensure you use the [adnuguk tag](https://github.com/gep13/CakeDemos/releases/tag/adnuguk).
-
-It was then given at [DDD Scotland 2016](http://ddd.scot/) on 14th May 2016.  The slides for the talk can be found [here](http://www.slideshare.net/gep13/having-your-cake-and-eating-it-too-dddscotland).
-
-**NOTE:** If you want to see the code and demos that were provided at this presentation, please ensure you use the [DDDScot2016 tag](https://github.com/gep13/CakeDemos/releases/tag/DDDScot2016).
-
-It was then given at [NDC Oslo](http://ndcoslo.com/) on 9th June 2016.  The slides for the talk can be found [here](http://www.slideshare.net/gep13/having-your-cake-and-eating-it-too-ndc-oslo-2016).
-
-**NOTE:** If you want to see the code and demos that were provided at this presentation, please ensure you use the [NDCOslo2016 tag](https://github.com/gep13/CakeDemos/releases/tag/NDCOslo2016).

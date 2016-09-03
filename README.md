@@ -20,7 +20,7 @@ Demo Repository for showing usage of the [Cake](http://cakebuild.net/) build aut
 
 **NOTE:** If you want to see the code and demos that were provided at this presentation, please ensure you use the [DDD11 tag](https://github.com/gep13/CakeDemos/releases/tag/DDD11)
 
-# Notes
+# Running Demos with no external internet connection
 
 In order to run this demo, the following infrastructure needs to be in place (this is due to the fact that the demo is designed to be run offline, with no external network connection).
 
@@ -93,4 +93,20 @@ In order to run this demo, the following infrastructure needs to be in place (th
   * xunit.extensibility.execution
   * xunit.runner.console
 
-**NOTE:** If you don't want to use a local setup, simply delete the cake.config file to go directly to the internet.  You will also need to remove the local VSCode configuration which is specific to Cake.
+# Running Demos with external internet connection
+
+If you don't want to use a local setup, you will need to made some minor modifications to this repository:
+
+* delete the cake.config file, so that packages are restored from the internet, rather than local Nexus Repository.
+* Remove the local VSCode configuration which specifies where to fetch NuGet Sources from.
+* Add a packages.config file to the tools folder which contains the following:
+
+```
+<?xml version="1.0" encoding="utf-8"?>
+<packages>
+	<package id="Cake" version="0.16.0" />
+    <package id="Cake.CoreCLR" version="0.16.0" />
+</packages>
+```
+
+**NOTE:** If there is a newer version of Cake available, change the packages.config versions as necessary.  The addition of the Cake.CoreCLR package is to allow debugging within VSCode.  This is only possible in versions of Cake starting at 0.16.0.

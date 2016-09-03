@@ -16,6 +16,7 @@
 * Open PowerPoint slidedeck
 * Open local Web Site in order to show documentation screen
 * Start Speaker Clock
+* Put phone onto flight mode
 * Install Cake VSCode extension
 * Install Cake Visual Studio extension
 * Setup local VSCode configuration

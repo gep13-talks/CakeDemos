@@ -26,6 +26,11 @@ In order to run this demo, the following infrastructure needs to be in place (th
 
 * Install [Nexus OSS](https://chocolatey.org/packages/nexus-repository) `choco install nexus-repository`
 * Set up two new repositories: http://localhost:8081/repository/cake/ which is a nuget feed, and http://localhost:8081/repository/cake-raw/ and is a raw feed
+* Use the following configuration in user settings for VSCode
+    "cake.bootstrappers": {
+        "powershell": "http://localhost:8081/repository/cake-raw/build.ps1",
+        "bash": "http://cakebuild.net/download/bootstrapper/bash"
+    }
 * Push the following resources into the cake-raw repository
   * curl.exe -v -u <username>:<password> --upload-file .\Resources\cake-raw\packages.config http://localhost:8081/repository/cake-raw/packages.config
   * curl.exe -v -u <username>:<password> --upload-file .\Resources\cake-raw\build.ps1 http://localhost:8081/repository/cake-raw/build.ps1

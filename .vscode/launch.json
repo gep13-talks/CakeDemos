@@ -1,13 +1,25 @@
-javascript {
+{
     "version": "0.2.0",
-    "configurations": [ {
-        "name": ".NET Core Launch (console)",
-        "type": "coreclr",
-        "request": "launch",
-        "program": "${workspaceRoot}/tools/Cake.CoreCLR/Cake.dll",
-        "args": [ "${workspaceRoot}/build.cake", "--debug", "--verbosity=diagnostic" ],
-        "cwd": "${workspaceRoot}",
-        "stopAtEntry": false,
-        "externalConsole": false
-        } ]
+    "configurations": [
+        {
+            "name": ".NET Core Launch (console)",
+            "type": "coreclr",
+            "request": "launch",
+            "program": "${workspaceRoot}/tools/Cake.CoreCLR/Cake.dll",
+            "args": [
+                "${workspaceRoot}/build.cake",
+                "--debug",
+                "--verbosity=diagnostic"
+            ],
+            "cwd": "${workspaceRoot}",
+            "stopAtEntry": false,
+            "externalConsole": false
+        },
+        {
+            "name": ".NET Core Attach",
+            "type": "coreclr",
+            "request": "attach",
+            "processId": "${command.pickProcess}"
         }
+    ]
+}

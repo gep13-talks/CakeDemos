@@ -9,3 +9,5 @@
 * Extend Clean task to include new nuget output folder
 
   **demo4step2** - Extend Clean Task
+
+* Run the build script, navigate to output folder and open the nupkg, showing it set with all the values

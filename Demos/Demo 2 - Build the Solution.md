@@ -8,10 +8,20 @@
 
   **demo2step2** - MSBuild Task
 
+* Change Dependency on Default Task to point at Build Task
+
+* Save the file and run the script.
+
+* Show stuff getting put into the bin folder
+
 * Add a more complicated MSBuild Alias, showing ability to add properties
 
   **demo2step3** - MSBuild Task with Settings
 
-* Change Dependency on Default Task to point at Build Task
+* Save the file and run the script.
+
+* Add a cross platform compatible build step
 
   **demo2step4** - Cross Platform Build Step
+
+* Save the file and run the script.

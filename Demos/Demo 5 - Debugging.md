@@ -10,7 +10,6 @@
 
 ## VSCode
 
-* Click the Select Language Mode button, and select C#
 * Set a breakpoint somewhere in the build.cake file
 * Click F5
 * F10 through build script until at NuGet Pack Step

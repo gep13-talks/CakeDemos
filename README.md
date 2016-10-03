@@ -20,6 +20,11 @@ Demo Repository for showing usage of the [Cake](http://cakebuild.net/) build aut
 
 **NOTE:** If you want to see the code and demos that were provided at this presentation, please ensure you use the [DDD11 tag](https://github.com/gep13/CakeDemos/releases/tag/DDD11)
 
+* It was then given at [DDD North](http://www.dddnorth.co.uk/) on 1st October 2016.  The slides for the talk can be found [here](http://www.slideshare.net/gep13/a-piece-of-cake-ddd-north).
+
+**NOTE:** If you want to see the code and demos that were provided at this presentation, please ensure you use the [DDDNorth tag](https://github.com/gep13/CakeDemos/releases/tag/DDDNorth)
+
+
 # Running Demos with no external internet connection
 
 In order to run this demo, the following infrastructure needs to be in place (this is due to the fact that the demo is designed to be run offline, with no external network connection).

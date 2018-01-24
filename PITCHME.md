@@ -15,6 +15,54 @@ Web: http://www.gep13.co.uk
 
 ## What is a build?
 
++++
+
+Typical Build Workflow
+
+![Build Step](assets/images/build-workflow-1.png)
+
++++
+
+Typical Build Workflow
+
+![Package Restore Step](assets/images/build-workflow-2.png)
+
++++
+
+Typical Build Workflow
+
+![Unit Test Steps](assets/images/build-workflow-3.png)
+
++++
+
+Typical Build Workflow
+
+![Clean Step](assets/images/build-workflow-4.png)
+
++++
+
+Typical Build Workflow
+
+![Test Coverage Step](assets/images/build-workflow-5.png)
+
++++
+
+Typical Build Workflow
+
+![Code Inspection Step](assets/images/build-workflow-6.png)
+
++++
+
+Typical Build Workflow
+
+![Package Step](assets/images/build-workflow-7.png)
+
++++
+
+Typical Build Workflow
+
+![Publish Step](assets/images/build-workflow-8.png)
+
 ---
 
 ## What is Cake?

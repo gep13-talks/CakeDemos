@@ -113,6 +113,12 @@ Typical Build Workflow
 
 ---
 
+## Okay, but why do I need it?
+
+![Why do I need Cake?](assets/images/but-why-do-i-need-it.png)
+
+---
+
 ## Source Code
 
 ---

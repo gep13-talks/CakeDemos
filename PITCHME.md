@@ -105,6 +105,14 @@ Typical Build Workflow
 
 ---
 
+## What tools am I able to use with Cake?
+
++++
+
+![Cake Tools](assets/images/tools-you-can-use-with-cake.png)
+
+---
+
 ## Source Code
 
 ---

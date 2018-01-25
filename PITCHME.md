@@ -19,48 +19,56 @@ Web: http://www.gep13.co.uk
 
 Typical Build Workflow
 
+<!-- .slide: data-background-transition="none" -->
 ![Build Step](assets/images/build-workflow-1.png)
 
 +++
 
 Typical Build Workflow
 
+<!-- .slide: data-background-transition="none" -->
 ![Package Restore Step](assets/images/build-workflow-2.png)
 
 +++
 
 Typical Build Workflow
 
+<!-- .slide: data-background-transition="none" -->
 ![Unit Test Steps](assets/images/build-workflow-3.png)
 
 +++
 
 Typical Build Workflow
 
+<!-- .slide: data-background-transition="none" -->
 ![Clean Step](assets/images/build-workflow-4.png)
 
 +++
 
 Typical Build Workflow
 
+<!-- .slide: data-background-transition="none" -->
 ![Test Coverage Step](assets/images/build-workflow-5.png)
 
 +++
 
 Typical Build Workflow
 
+<!-- .slide: data-background-transition="none" -->
 ![Code Inspection Step](assets/images/build-workflow-6.png)
 
 +++
 
 Typical Build Workflow
 
+<!-- .slide: data-background-transition="none" -->
 ![Package Step](assets/images/build-workflow-7.png)
 
 +++
 
 Typical Build Workflow
 
+<!-- .slide: data-background-transition="none" -->
 ![Publish Step](assets/images/build-workflow-8.png)
 
 ---
@@ -77,30 +85,37 @@ Typical Build Workflow
 
 +++
 
+<!-- .slide: data-background-transition="none" -->
 ![Available from lots of sources](assets/images/how-does-cake-work-2.png)
 
 +++
 
+<!-- .slide: data-background-transition="none" -->
 ![Pass in arguments and configuration](assets/images/how-does-cake-work-3.png)
 
 +++
 
+<!-- .slide: data-background-transition="none" -->
 ![Pass in your build script](assets/images/how-does-cake-work-4.png)
 
 +++
 
+<!-- .slide: data-background-transition="none" -->
 ![Use some pre-processor directives](assets/images/how-does-cake-work-5.png)
 
 +++
 
+<!-- .slide: data-background-transition="none" -->
 ![Roslyn used to compile your script](assets/images/how-does-cake-work-6.png)
 
 +++
 
+<!-- .slide: data-background-transition="none" -->
 ![Script will be executed](assets/images/how-does-cake-work-7.png)
 
 +++
 
+<!-- .slide: data-background-transition="none" -->
 ![Output can be anything you want](assets/images/how-does-cake-work-8.png)
 
 ---

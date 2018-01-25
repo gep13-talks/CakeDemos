@@ -69,6 +69,42 @@ Typical Build Workflow
 
 ---
 
+## How does Cake work?
+
++++
+
+![Start with Cake.exe or Cake.dll](assets/images/how-does-cake-work-1.png)
+
++++
+
+![Available from lots of sources](assets/images/how-does-cake-work-2.png)
+
++++
+
+![Pass in arguments and configuration](assets/images/how-does-cake-work-3.png)
+
++++
+
+![Pass in your build script](assets/images/how-does-cake-work-4.png)
+
++++
+
+![Use some pre-processor directives](assets/images/how-does-cake-work-5.png)
+
++++
+
+![Roslyn used to compile your script](assets/images/how-does-cake-work-6.png)
+
++++
+
+![Script will be executed](assets/images/how-does-cake-work-7.png)
+
++++
+
+![Output can be anything you want](assets/images/how-does-cake-work-8.png)
+
+---
+
 ## Source Code
 
 ---

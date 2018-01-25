@@ -119,6 +119,12 @@ Typical Build Workflow
 
 ---
 
+## We build Cake with Cake on...
+
+![Build Cake with Cake](assets/images/build-cake-with-cake.png)
+
+---
+
 ## Source Code
 
 ---

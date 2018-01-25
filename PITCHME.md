@@ -125,6 +125,19 @@ Typical Build Workflow
 
 ---
 
+## Can't I just use...
+
+- FAKE
+- MAKE |
+- CMake |
+- MSBuild |
+- NAnt |
+- PSake |
+- Bau |
+- ? |
+
+---
+
 ## Source Code
 
 ---

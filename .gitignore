@@ -236,9 +236,7 @@ _Pvt_Extensions
 .fake/
 
 # Cake specific
-tools/Cake/
-tools/Cake.CoreCLR/
-tools/nuget.exe
-tools/xunit.runner.console/
+tools/*
+!tools/packages.config
 
 BuildArtifacts/

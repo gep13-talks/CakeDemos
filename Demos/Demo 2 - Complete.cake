@@ -1,23 +1,25 @@
 var target = Argument("target", "Default");
 var configuration = Argument("configuration", "Release");
 
-Task("NuGet-Package-Restore")
+Task("DotNet-Core-Package-Restore")
     .Does(() =>
 {
-    NuGetRestore("./Source/Gep13.Cake.Sample.WebApplication.sln");
+    DotNetCoreRestore(
+        "./Source/Gep13.Cake.Sample.WebApplication",
+        new DotNetCoreRestoreSettings {
+            Sources = new[] { "http://localhost:8081/repository/cake/" }
+        }
+    );
 });
 
 Task("Build")
-    .IsDependentOn("NuGet-Package-Restore")
+    .IsDependentOn("DotNet-Core-Package-Restore")
     .Does(() =>
 {
-    MSBuild("./Source/Gep13.Cake.Sample.WebApplication.sln", new MSBuildSettings()
-        .SetConfiguration(configuration)
-        .WithProperty("Windows", "True")
-        .WithProperty("TreatWarningsAsErrors", "True")
-        .UseToolVersion(MSBuildToolVersion.VS2015)
-        .SetVerbosity(Verbosity.Minimal)
-        .SetNodeReuse(false));
+    var settings = new DotNetCoreMSBuildSettings();
+    settings.SetConfiguration(configuration);
+
+    DotNetCoreMSBuild("./Source/Gep13.Cake.Sample.WebApplication/Gep13.Cake.Sample.WebApplication.csproj", settings);
 });
 
 Task("Default")

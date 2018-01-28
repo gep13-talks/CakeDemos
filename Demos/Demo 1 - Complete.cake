@@ -1,17 +1,17 @@
 var target = Argument("target", "Default");
 
-Task("NuGet-Package-Restore")
+Task("DotNet-Core-Package-Restore")
     .Does(() =>
 {
-    NuGetRestore(
-        "./Source/Gep13.Cake.Sample.WebApplication.sln",
-        new NuGetRestoreSettings { 
-            Source = new List<string>() { "http://localhost:8081/repository/cake/" }
+    DotNetCoreRestore(
+        "./Source/Gep13.Cake.Sample.WebApplication",
+        new DotNetCoreRestoreSettings {
+            Sources = new[] { "http://localhost:8081/repository/cake/" }
         }
     );
 });
 
 Task("Default")
-  .IsDependentOn("NuGet-Package-Restore");
+  .IsDependentOn("DotNet-Core-Package-Restore");
 
 RunTarget(target);

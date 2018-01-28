@@ -1,6 +1,12 @@
 var target = Argument("target", "Default");
 var configuration = Argument("configuration", "Release");
 
+Task("Clean")
+    .Does(() => 
+{
+    CleanDirectory("./BuildArtifacts");
+});
+
 Task("DotNet-Core-Package-Restore")
     .Does(() =>
 {
@@ -14,6 +20,7 @@ Task("DotNet-Core-Package-Restore")
 
 Task("Build")
     .IsDependentOn("DotNet-Core-Package-Restore")
+    .IsDependentOn("Clean")
     .Does(() =>
 {
     var settings = new DotNetCoreBuildSettings {

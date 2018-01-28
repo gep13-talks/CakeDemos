@@ -16,9 +16,11 @@ Task("Build")
     .IsDependentOn("DotNet-Core-Package-Restore")
     .Does(() =>
 {
-    var settings = new DotNetCoreMSBuildSettings();
-    settings.SetConfiguration(configuration);
-
+    var settings = new DotNetCoreBuildSettings {
+        Configuration = configuration,
+        NoRestore = true
+    };
+    
     DotNetCoreMSBuild("./Source/Gep13.Cake.Sample.WebApplication/Gep13.Cake.Sample.WebApplication.csproj", settings);
 });
 

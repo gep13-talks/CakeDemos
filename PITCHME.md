@@ -9,8 +9,9 @@
 ## What is a Build?
 
 Note:
-Cake creates a Directed acyclic graph of each of the tasks
-Makes sure that each task is only run once
+Cake creates a Directed acyclic graph of each of the tasks.
+
+Makes sure that each task is only run once.
 
 +++
 
@@ -81,9 +82,9 @@ Typical Build Workflow
 ## What is Cake?
 
 Note:
-Full disclosure, I am one of three maintainers of the Cake project on GitHub
+Full disclosure, I am one of three maintainers of the Cake project on GitHub.
 
-Some history/information
+Some history/information:
 - Open Source
 - Supports the most common tools out of the box
 - Cross Platform (Windows OS X Linux)
@@ -107,8 +108,9 @@ Some history/information
 "Cake (C# Make) is a cross platform build automation system with a C# DSL to do things like compiling code, copy files/folders, running unit tests, compress files and build NuGet packages.”
 
 Note:
-Built using Roslyn, allowing execution on both Windows, OS X and Linux
-Script Processing to make sure things work the same on both
+Built using Roslyn, allowing execution on both Windows, OS X and Linux.
+
+Script Processing to make sure things work the same on both.
 
 ---
 
@@ -173,9 +175,11 @@ Script Processing to make sure things work the same on both
 ![Cake Tools](assets/images/tools-you-can-use-with-cake.png)
 
 Note:
-Black ones are built in and ship with Cake
-Blue ones are those that have been created by the community
-There are aliases that span across
+Black ones are built in and ship with Cake.
+
+Blue ones are those that have been created by the community.
+
+There are aliases that span across:
   * Unit Testing Frameworks
   * Test Coverage
   * Static Code Analysis
@@ -192,7 +196,7 @@ There are aliases that span across
 ![Why do I need Cake?](assets/images/but-why-do-i-need-it.png)
 
 Note:
-Talk about compiling directly out of Visual Studio
+Talk about compiling directly out of Visual Studio:
   - You might run some Unit Tests after the build has completed
   - You might run some static analysis tools within Visual Studio
   - You might manually create and deploy a package once you know that everything works
@@ -207,8 +211,9 @@ This is prone to human error, and not repeatable or maintainable as the complica
 ![Build Cake with Cake](assets/images/build-cake-with-cake.png)
 
 Note:
-9 Different CI Servers
-3 Different Operating Systems
+9 Different CI Servers.
+
+3 Different Operating Systems.
 ---
 
 @title[Can't I just use...]
@@ -225,6 +230,7 @@ Note:
 
 Note:
 You can use any of these that you want.
+
 Fully agree with the concept of a polyglot developer, but from a strictly pragmatic point of view, writing a build script in the same language as you are developing, makes a lot of sense.
 
 ---
@@ -245,12 +251,11 @@ Fully agree with the concept of a polyglot developer, but from a strictly pragma
 ## Demos
 
 Note:
-Mention laptop setup
+Mention laptop setup:
 
-Working in offline mode
-All commands are still executed as they would be if doing it in reallife
-Only slightly modified bootstrapper and configuration file
-Show Visual Studio solution, and explain project structure
+* Working in offline mode
+* All commands are still executed as they would be if doing it in reallife
+* Only slightly modified bootstrapper and configuration file
 
 ---
 

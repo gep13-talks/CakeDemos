@@ -76,6 +76,18 @@ Typical Build Workflow
 
 ## What is Cake?
 
++++
+
+@title[Cake Logo]
+![Cake Logo](assets/images/cake-logo.png)
+
++++
+
+@title[A Definition...]
+### A Definition...
+
+"Cake (C# Make) is a cross platform build automation system with a C# DSL to do things like compiling code, copy files/folders, running unit tests, compress files and build NuGet packages.”
+
 ---
 
 @title[How does Cake work?]
@@ -175,6 +187,7 @@ Typical Build Workflow
 ---
 
 @title[Let's bake some Cake]
+## Let's bake some Cake
 ![What we will do in demo](assets/images/what-we-will-do-in-demo.png)
 
 ---

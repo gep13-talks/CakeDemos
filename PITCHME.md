@@ -5,12 +5,17 @@
 
 ---
 
-@title[Disclaimer]
-## Disclaimer
+@title[Disclaimers]
+## Disclaimers
 
 +++
 
 ## Fit like i'day?
+
++++
+
+## Is that a Mac?
+### WAT!
 
 ---
 

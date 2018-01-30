@@ -2,24 +2,17 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": ".NET Core Launch (console)",
-            "type": "coreclr",
+            "name": "Cake: Debug Script (mono)",
+            "type": "mono",
             "request": "launch",
-            "program": "${workspaceRoot}/tools/Cake.CoreCLR/Cake.dll",
+            "program": "${workspaceRoot}/tools/Cake/Cake.exe",
             "args": [
                 "${workspaceRoot}/build.cake",
                 "--debug",
                 "--verbosity=diagnostic"
             ],
             "cwd": "${workspaceRoot}",
-            "stopAtEntry": false,
-            "externalConsole": false
-        },
-        {
-            "name": ".NET Core Attach",
-            "type": "coreclr",
-            "request": "attach",
-            "processId": "${command.pickProcess}"
+            "console": "internalConsole"
         }
     ]
 }

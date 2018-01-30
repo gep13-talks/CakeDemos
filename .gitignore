@@ -244,3 +244,5 @@ BuildArtifacts/
 .DS_Store
 
 .dotnet/
+
+PITCHME/

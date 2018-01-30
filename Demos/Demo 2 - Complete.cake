@@ -21,7 +21,7 @@ Task("Build")
         NoRestore = true
     };
     
-    DotNetCoreMSBuild("./Source/Gep13.Cake.Sample.WebApplication/Gep13.Cake.Sample.WebApplication.csproj", settings);
+    DotNetCoreBuild("./Source/Gep13.Cake.Sample.WebApplication/Gep13.Cake.Sample.WebApplication.csproj", settings);
 });
 
 Task("Default")

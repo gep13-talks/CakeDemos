@@ -4,9 +4,9 @@
 
   **demo2step1** - Additional argument
 
-* Add a task for running MSBuild
+* Add a task for running DotNetCore Build
 
-  **demo2step2** - MSBuild Task
+  **demo2step2** - Build Task
 
 * Change Dependency on Default Task to point at Build Task
 
@@ -16,12 +16,6 @@
 
 * Add a more complicated MSBuild Alias, showing ability to add properties
 
-  **demo2step3** - MSBuild Task with Settings
-
-* Save the file and run the script.
-
-* Add a cross platform compatible build step
-
-  **demo2step4** - Cross Platform Build Step
+  **demo2step3** - DotNetCore Build Task with Settings
 
 * Save the file and run the script.

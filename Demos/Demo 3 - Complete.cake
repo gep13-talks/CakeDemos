@@ -28,13 +28,12 @@ Task("Publish")
     .IsDependentOn("Build")
     .Does(() => 
 {
-   var settings = new DotNetCorePublishSettings
-     {
-         Configuration = configuration,
-         OutputDirectory = "./BuildArtifacts/"
-     };
+    var settings = new DotNetCorePublishSettings {
+       Configuration = configuration,
+       OutputDirectory = "./BuildArtifacts/"
+    };
 
-     DotNetCorePublish("./Source/Gep13.Cake.Sample.WebApplication/Gep13.Cake.Sample.WebApplication.csproj", settings); 
+    DotNetCorePublish("./Source/Gep13.Cake.Sample.WebApplication/Gep13.Cake.Sample.WebApplication.csproj", settings); 
 });
 
 Task("Default")

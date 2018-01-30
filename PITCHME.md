@@ -32,7 +32,7 @@ Makes sure that each task is only run once.
 @title[Build Step]
 Typical Build Workflow
 
-<!-- .slide: data-background-transition="none" -->
+<!-- .slide: data-transition="none" -->
 ![Build Step](assets/images/build-workflow-1.png)
 
 +++
@@ -40,7 +40,7 @@ Typical Build Workflow
 @title[Package Restore Step]
 Typical Build Workflow
 
-<!-- .slide: data-background-transition="none" -->
+<!-- .slide: data-transition="none" -->
 ![Package Restore Step](assets/images/build-workflow-2.png)
 
 +++
@@ -48,7 +48,7 @@ Typical Build Workflow
 @title[Unit Test Step]
 Typical Build Workflow
 
-<!-- .slide: data-background-transition="none" -->
+<!-- .slide: data-transition="none" -->
 ![Unit Test Step](assets/images/build-workflow-3.png)
 
 +++
@@ -56,7 +56,7 @@ Typical Build Workflow
 @title[Clean Step]
 Typical Build Workflow
 
-<!-- .slide: data-background-transition="none" -->
+<!-- .slide: data-transition="none" -->
 ![Clean Step](assets/images/build-workflow-4.png)
 
 +++
@@ -64,7 +64,7 @@ Typical Build Workflow
 @title[Test Coverage Step]
 Typical Build Workflow
 
-<!-- .slide: data-background-transition="none" -->
+<!-- .slide: data-transition="none" -->
 ![Test Coverage Step](assets/images/build-workflow-5.png)
 
 +++
@@ -72,7 +72,7 @@ Typical Build Workflow
 @title[Code Inspection Step]
 Typical Build Workflow
 
-<!-- .slide: data-background-transition="none" -->
+<!-- .slide: data-transition="none" -->
 ![Code Inspection Step](assets/images/build-workflow-6.png)
 
 +++
@@ -80,7 +80,7 @@ Typical Build Workflow
 @title[Package Step]
 Typical Build Workflow
 
-<!-- .slide: data-background-transition="none" -->
+<!-- .slide: data-transition="none" -->
 ![Package Step](assets/images/build-workflow-7.png)
 
 +++
@@ -88,7 +88,7 @@ Typical Build Workflow
 @title[Publish Step]
 Typical Build Workflow
 
-<!-- .slide: data-background-transition="none" -->
+<!-- .slide: data-transition="none" -->
 ![Publish Step](assets/images/build-workflow-8.png)
 
 ---
@@ -139,43 +139,43 @@ Script Processing to make sure things work the same on both.
 +++
 
 @title[Available from lots of places]
-<!-- .slide: data-background-transition="none" -->
+<!-- .slide: data-transition="none" -->
 ![Available from lots of sources](assets/images/how-does-cake-work-2.png)
 
 +++
 
 @title[Add Configuration]
-<!-- .slide: data-background-transition="none" -->
+<!-- .slide: data-transition="none" -->
 ![Pass in arguments and configuration](assets/images/how-does-cake-work-3.png)
 
 +++
 
 @title[Pass your build script]
-<!-- .slide: data-background-transition="none" -->
+<!-- .slide: data-transition="none" -->
 ![Pass in your build script](assets/images/how-does-cake-work-4.png)
 
 +++
 
 @title[Add pre-processor directives]
-<!-- .slide: data-background-transition="none" -->
+<!-- .slide: data-transition="none" -->
 ![Use some pre-processor directives](assets/images/how-does-cake-work-5.png)
 
 +++
 
 @title[Compile with Roslyn]
-<!-- .slide: data-background-transition="none" -->
+<!-- .slide: data-transition="none" -->
 ![Roslyn used to compile your script](assets/images/how-does-cake-work-6.png)
 
 +++
 
 @title[Script will be executed]
-<!-- .slide: data-background-transition="none" -->
+<!-- .slide: data-transition="none" -->
 ![Script will be executed](assets/images/how-does-cake-work-7.png)
 
 +++
 
 @title[Tada!]
-<!-- .slide: data-background-transition="none" -->
+<!-- .slide: data-transition="none" -->
 ![Output can be anything you want](assets/images/how-does-cake-work-8.png)
 
 ---

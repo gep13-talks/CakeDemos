@@ -1,22 +1,15 @@
+@title[A Piece of Cake]
 ## A Piece of Cake
 ### C# powered cross platform build automationß
 
-+++
-
-Gary Ewan Park
-
-Email: gep13@gep13.co.uk
-
-Twitter: @gep13
-
-Web: http://www.gep13.co.uk
-
 ---
 
-## What is a build?
+@title[What is a Build?]
+## What is a Build?
 
 +++
 
+@title[Build Step]
 Typical Build Workflow
 
 <!-- .slide: data-background-transition="none" -->
@@ -24,6 +17,7 @@ Typical Build Workflow
 
 +++
 
+@title[Package Restore Step]
 Typical Build Workflow
 
 <!-- .slide: data-background-transition="none" -->
@@ -31,13 +25,15 @@ Typical Build Workflow
 
 +++
 
+@title[Unit Test Step]
 Typical Build Workflow
 
 <!-- .slide: data-background-transition="none" -->
-![Unit Test Steps](assets/images/build-workflow-3.png)
+![Unit Test Step](assets/images/build-workflow-3.png)
 
 +++
 
+@title[Clean Step]
 Typical Build Workflow
 
 <!-- .slide: data-background-transition="none" -->
@@ -45,6 +41,7 @@ Typical Build Workflow
 
 +++
 
+@title[Test Coverage Step]
 Typical Build Workflow
 
 <!-- .slide: data-background-transition="none" -->
@@ -52,6 +49,7 @@ Typical Build Workflow
 
 +++
 
+@title[Code Inspection Step]
 Typical Build Workflow
 
 <!-- .slide: data-background-transition="none" -->
@@ -59,6 +57,7 @@ Typical Build Workflow
 
 +++
 
+@title[Package Step]
 Typical Build Workflow
 
 <!-- .slide: data-background-transition="none" -->
@@ -66,6 +65,7 @@ Typical Build Workflow
 
 +++
 
+@title[Publish Step]
 Typical Build Workflow
 
 <!-- .slide: data-background-transition="none" -->

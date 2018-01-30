@@ -1,7 +1,7 @@
 @title[A Piece of Cake]
 
 ## A Piece of Cake
-### C# powered cross platform build automationß
+### C# powered cross platform build automation
 
 ---
 

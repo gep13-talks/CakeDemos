@@ -253,15 +253,15 @@ Fully agree with the concept of a polyglot developer, but from a strictly pragma
 
 ---
 
-@title[Source Code]
-## Source Code
-### http://gep13.me/CakeDemos
-
----
-
 @title[Let's bake some Cake]
 ## Let's bake some Cake
 ![What we will do in demo](assets/images/what-we-will-do-in-demo.png)
+
+---
+
+@title[Source Code]
+## Source Code
+### http://gep13.me/CakeDemos
 
 ---
 

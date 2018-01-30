@@ -32,7 +32,6 @@ Makes sure that each task is only run once.
 @title[Build Step]
 Typical Build Workflow
 
-<!-- .slide: data-transition="none" -->
 ![Build Step](assets/images/build-workflow-1.png)
 
 +++

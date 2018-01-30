@@ -1,16 +1,19 @@
 # Demo 5 - Debugging
 
-## Visual Studio
-
-* Add a `#break` directive in NuGetRestore Step
-* Run the following command `cake build.cake --debug`
-* Switch to Visual Studio, and attach to process id from previous step
-* F10 through build script until at NuGet Pack Step
-* Create Quick Watch on nugetPackSettings
-
 ## VSCode
+
+### Mono
 
 * Set a breakpoint somewhere in the build.cake file
 * Click F5
-* F10 through build script until at NuGet Pack Step
-* Hover over nugetPackSettings to see the contents
+* F10 through build script
+* Hover over one of the settings variables to see the contents
+
+### .Net Core
+
+* Open the launch.json file
+* Add new configuration for running .Net Core Debugging
+* Set a breakpoint somewhere in the build.cake file
+* Click F5
+* F10 through the build script
+* Hover over one of the settings variables to see the contents

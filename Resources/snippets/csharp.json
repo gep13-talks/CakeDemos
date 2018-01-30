@@ -1,0 +1,84 @@
+{
+	"Demo 1 - Basic Cake Template": {
+		"prefix": "demo1step1",
+		"body": [
+			"var target = Argument(\"target\", \"Default\");",
+			"",
+			"Task(\"DotNet-Core-Package-Restore\")",
+    		"\t.Does(() =>",
+			"{",
+			"});",
+			"",
+			"Task(\"Default\")",
+			"\t.IsDependentOn(\"DotNet-Core-Package-Restore\");",
+			"",  
+			"RunTarget(target);"
+		]
+	},
+	"Demo 1 - DotNetCore Restore Step": {
+		"prefix": "demo1step2",
+		"body": [
+			"DotNetCoreRestore(",
+        	"\t\"./Source/Gep13.Cake.Sample.WebApplication\",",
+        	"\tnew DotNetCoreRestoreSettings {",
+            "\t\tPackagesDirectory = \"./Source/packages\"",
+        	"\t}",
+    		");"
+		]
+	},
+	"Demo 2 - Additional Argument": {
+		"prefix": "demo2step1",
+		"body": [
+			"var configuration = Argument(\"configuration\", \"Release\");",
+			""
+		]
+	},
+	"Demo 2 - DotNetCore Build Task": {
+		"prefix": "demo2step2",
+		"body": [
+			"Task(\"Build\")",
+    		"\t.IsDependentOn(\"DotNet-Core-Package-Restore\")",
+    		"\t.Does(() =>",
+			"{",
+    		"\tDotNetCoreBuild(\"./Source/Gep13.Cake.Sample.WebApplication/Gep13.Cake.Sample.WebApplication.csproj\");",
+			"});"
+		]
+	},
+	"Demo 2 - DotNetCore Build Task with Settings": {
+		"prefix": "demo2step3",
+		"body": [
+    		"var settings = new DotNetCoreBuildSettings {",
+        	"\tConfiguration = configuration,",
+        	"\tNoRestore = true",
+    		"};",
+			"",
+    		"DotNetCoreBuild(\"./Source/Gep13.Cake.Sample.WebApplication/Gep13.Cake.Sample.WebApplication.csproj\", settings);"
+		]
+	},
+	"Demo 3 - Publish Application": {
+		"prefix": "demo3step1",
+		"body": [
+			"Task(\"Publish\")",
+    		"\t.IsDependentOn(\"Build\")",
+    		"\t.Does(() =>", 
+			"{",
+   			"\tvar settings = new DotNetCorePublishSettings {",
+         	"\t\tConfiguration = configuration,",
+         	"\t\tOutputDirectory = \"./BuildArtifacts/\"",
+     		"\t};",
+			"",
+     		"\tDotNetCorePublish(\"./Source/Gep13.Cake.Sample.WebApplication/Gep13.Cake.Sample.WebApplication.csproj\", settings);", 
+			"});"
+		]
+	},
+	"Demo 4 - Clean Task": {
+		"prefix": "demo4step1",
+		"body": [
+			"Task(\"Clean\")",
+    		"\t.Does(() =>",
+			"{",
+    		"\tCleanDirectory(\"./BuildArtifacts\");",
+			"});"
+		]
+	}
+}

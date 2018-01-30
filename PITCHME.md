@@ -110,6 +110,11 @@ Some history/information:
 
 +++
 
+@title[Not this Cake]
+![Not this Cake](assets/images/not-this-cake.png)
+
++++
+
 @title[Cake Logo]
 ![Cake Logo](assets/images/cake-logo.png)
 

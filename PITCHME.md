@@ -78,69 +78,83 @@ Typical Build Workflow
 
 ---
 
+@title[How does Cake work?]
 ## How does Cake work?
 
 +++
 
+@title[Start with Cake.exe/dll]
 ![Start with Cake.exe or Cake.dll](assets/images/how-does-cake-work-1.png)
 
 +++
 
+@title[Available from lots of places]
 <!-- .slide: data-background-transition="none" -->
 ![Available from lots of sources](assets/images/how-does-cake-work-2.png)
 
 +++
 
+@title[Add Configuration]
 <!-- .slide: data-background-transition="none" -->
 ![Pass in arguments and configuration](assets/images/how-does-cake-work-3.png)
 
 +++
 
+@title[Pass your build script]
 <!-- .slide: data-background-transition="none" -->
 ![Pass in your build script](assets/images/how-does-cake-work-4.png)
 
 +++
 
+@title[Add pre-processor directives]
 <!-- .slide: data-background-transition="none" -->
 ![Use some pre-processor directives](assets/images/how-does-cake-work-5.png)
 
 +++
 
+@title[Compile with Roslyn]
 <!-- .slide: data-background-transition="none" -->
 ![Roslyn used to compile your script](assets/images/how-does-cake-work-6.png)
 
 +++
 
+@title[Script will be executed]
 <!-- .slide: data-background-transition="none" -->
 ![Script will be executed](assets/images/how-does-cake-work-7.png)
 
 +++
 
+@title[Tada!]
 <!-- .slide: data-background-transition="none" -->
 ![Output can be anything you want](assets/images/how-does-cake-work-8.png)
 
 ---
 
+@title[What tools am I able to use with Cake?]
 ## What tools am I able to use with Cake?
 
 +++
 
+@title[Lots of tools!]
 ![Cake Tools](assets/images/tools-you-can-use-with-cake.png)
 
 ---
 
+@title[Okay, but why do I need it?]
 ## Okay, but why do I need it?
 
 ![Why do I need Cake?](assets/images/but-why-do-i-need-it.png)
 
 ---
 
+@title[We build Cake with Cake on...]
 ## We build Cake with Cake on...
 
 ![Build Cake with Cake](assets/images/build-cake-with-cake.png)
 
 ---
 
+@title[Can't I just use...]
 ## Can't I just use...
 
 - FAKE
@@ -154,14 +168,17 @@ Typical Build Workflow
 
 ---
 
+@title[Source Code]
 ## Source Code
 
 ---
 
+@title[Demos]
 ## Demos
 
 ---
 
+@title[Questions]
 ## Questions?
 
 Feel free to get in touch
@@ -174,6 +191,7 @@ Web: http://www.gep13.co.uk
 
 ---
 
+@title[Resources]
 ## Resources
 
 * Cake Documentation

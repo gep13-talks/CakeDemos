@@ -170,6 +170,12 @@ Typical Build Workflow
 
 @title[Source Code]
 ## Source Code
+### http://gep13.me/CakeDemos
+
+---
+
+@title[Let's bake some Cake]
+![What we will do in demo](assets/images/what-we-will-do-in-demo.png)
 
 ---
 
@@ -194,15 +200,9 @@ Web: http://www.gep13.co.uk
 @title[Resources]
 ## Resources
 
-* Cake Documentation
-  * https://cakebuild.net/docs/
-* Source Code
-  * https://github.com/cake-build/cake
-* Presentations
-  * https://cakebuild.net/docs/resources/presentations
-* Podcasts
-  * https://cakebuild.net/docs/resources/podcasts
-* Videos
-  * https://cakebuild.net/docs/resources/videos
-* Blog Posts
-  * https://cakebuild.net/docs/resources/blogs
+* Cake Documentation - https://cakebuild.net/docs/
+* Source Code - https://github.com/cake-build/cake
+* Presentations - https://cakebuild.net/docs/resources/presentations
+* Podcasts - https://cakebuild.net/docs/resources/podcasts
+* Videos - https://cakebuild.net/docs/resources/videos
+* Blog Posts - https://cakebuild.net/docs/resources/blogs

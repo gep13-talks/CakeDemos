@@ -24,6 +24,9 @@ Demo Repository for showing usage of the [Cake](http://cakebuild.net/) build aut
 
 **NOTE:** If you want to see the code and demos that were provided at this presentation, please ensure you use the [DDDNorth tag](https://github.com/gep13/CakeDemos/releases/tag/DDDNorth)
 
+* It was then given at [KC .NET User Group](https://www.meetup.com/KC-NET-User-Group) on the 30th January 2018.  The slides for the talk can be found [here]().
+
+**NOTE:** If you want to see the code and demos that were provided at this presentation, please ensure you use the [KCDUG branch]().
 
 # Running Demos with no external internet connection
 
@@ -39,11 +42,12 @@ In order to run this demo, the following infrastructure needs to be in place (th
 * Push the following resources into the cake-raw repository
   * curl.exe -v -u <username>:<password> --upload-file .\Resources\cake-raw\packages.config http://localhost:8081/repository/cake-raw/packages.config
   * curl.exe -v -u <username>:<password> --upload-file .\Resources\cake-raw\build.ps1 http://localhost:8081/repository/cake-raw/build.ps1
+  * curl.exe -v -u <username>:<password> --upload-file .\Resources\cake-raw\build.ps1 http://localhost:8081/repository/cake-raw/build.sh
   * curl.exe -v -u <username>:<password> --upload-file .\Resources\cake-raw\NuGet.exe http://localhost:8081/repository/cake-raw/NuGet.exe
+* Add the contentsof the .\Resources\snippets\csharp.json file to your C# snippets file in VSCode
 * Push the following packages into the cake repository:
-  * nuget push C:\users\gary.park\Downloads\Cake.0.16.0-alpha0075.nupkg -source http://localhost:8081/repository/cake/
-  * Antlr
-  * bootstrap
+  * nuget push C:\users\gary.park\Downloads\Cake.0.25.0.nupkg -source http://localhost:8081/repository/cake/
+  * Cake.Bakery
   * Cake.Common
   * Cake.Core
   * Cake.CoreCLR
@@ -51,58 +55,8 @@ In order to run this demo, the following infrastructure needs to be in place (th
   * Cake.Frosting.Cli
   * Cake.NuGet
   * Cake.Testing
-  * EntityFramework
-  * jQuery
-  * jQuery.Validation
-  * Microsoft.ApplicationInsights
-  * Microsoft.ApplicationInsights.Agent.Intercept
-  * Microsoft.ApplicationInsights.DependencyCollector
-  * Microsoft.ApplicationInsights.JavaScript
-  * Microsoft.ApplicationInsights.PerfCounterCollector
-  * Microsoft.ApplicationInsights.Web
-  * Microsoft.ApplicationInsights.WindowsServer
-  * Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel
-  * Microsoft.AspNet.Identity.Core
-  * Microsoft.AspNet.Identity.EntityFramework
-  * Microsoft.AspNet.Identity.Owin
-  * Microsoft.AspNet.Mvc
-  * Microsoft.AspNet.Razor
-  * Microsoft.AspNet.Web.Optimization
-  * Microsoft.AspNet.WebPages
-  * Microsoft.CodeAnalysis.CSharp
-  * Microsoft.CodeAnalysis.Scripting
-  * Microsoft.CodeDom.Providers.DotNetCompilerPlatform
-  * Microsoft.jQuery.Unobtrusive.Validation
-  * Microsoft.Net.Compilers
-  *	Microsoft.Owin
-  *	Microsoft.Owin.Host.SystemWeb
-  *	Microsoft.Owin.Security
-  *	Microsoft.Owin.Security.Cookies
-  *	Microsoft.Owin.Security.Facebook
-  *	Microsoft.Owin.Security.Google
-  *	Microsoft.Owin.Security.MicrosoftAccount
-  *	Microsoft.Owin.Security.OAuth
-  *	Microsoft.Owin.Security.Twitter
-  * Microsoft.Web.infrastructure
-  * Modernizr
-  * Newtonsoft.Json
-  * NUnit
-  * NUnit.ConsoleRunner
-  * OpenCover
-  * Owin
-  * ReportGenerator
-  * Respond
-  * Roslyn.Compilers.Common
-  * Roslyn.Compilers.CSharp
-  * WebGrease
-  * xunit
-  * xunit.abstractions
-  * xunit.assert
-  * xunit.core
-  * xunit.extensibility.core
-  * xunit.extensibility.execution
-  * xunit.runner.console
-
+  * dapper
+  
 # Running Demos with external internet connection
 
 If you don't want to use a local setup, you will need to made some minor modifications to this repository:
@@ -114,8 +68,8 @@ If you don't want to use a local setup, you will need to made some minor modific
 ```
 <?xml version="1.0" encoding="utf-8"?>
 <packages>
-	<package id="Cake" version="0.16.0" />
-    <package id="Cake.CoreCLR" version="0.16.0" />
+    <package id="Cake" version="0.25.0" />
+    <package id="Cake.CoreCLR" version="0.25.0" />
 </packages>
 ```
 

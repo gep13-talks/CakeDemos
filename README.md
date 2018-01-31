@@ -24,9 +24,9 @@ Demo Repository for showing usage of the [Cake](http://cakebuild.net/) build aut
 
 **NOTE:** If you want to see the code and demos that were provided at this presentation, please ensure you use the [DDDNorth tag](https://github.com/gep13/CakeDemos/releases/tag/DDDNorth)
 
-* It was then given at [KC .NET User Group](https://www.meetup.com/KC-NET-User-Group) on the 30th January 2018.  The slides for the talk can be found [here]().
+* It was then given at [KC .NET User Group](https://www.meetup.com/KC-NET-User-Group) on the 30th January 2018.  The slides for the talk can be found [here](https://gitpitch.com/gep13/CakeDemos/KCDUG).
 
-**NOTE:** If you want to see the code and demos that were provided at this presentation, please ensure you use the [KCDUG branch]().
+**NOTE:** If you want to see the code and demos that were provided at this presentation, please ensure you use the [KCDUG branch](https://github.com/gep13/CakeDemos/tree/KCDUG).
 
 # Running Demos with no external internet connection
 

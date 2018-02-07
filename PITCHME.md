@@ -102,8 +102,8 @@ Some history/information:
 - Supports the most common tools out of the box
 - Cross Platform (Windows OS X Linux)
 - Small but slowly growing
-  - almost 900 Pull Requests 
-  - 134 Contributors 
+  - almost 900 Pull Requests
+  - 134 Contributors
   - over 200 third party addins
   - 1575 Stars
   - Over 1.5 million downloads
@@ -235,6 +235,12 @@ Note:
 ---
 
 @title[Can't I just use...]
+## Can't I just use...
+
++++
+
+<!-- .slide: data-transition="none" -->
+@title[Alternative Build Tools]
 ## Can't I just use...
 
 - FAKE

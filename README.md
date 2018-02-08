@@ -32,6 +32,10 @@ Demo Repository for showing usage of the [Cake](http://cakebuild.net/) build aut
 
 **NOTE:** If you want to see the code and demos that were provided at this presentation, please ensure you use the [dotnetoxford branch](https://github.com/gep13/CakeDemos/tree/dotnetoxford).
 
+* It was then given at [London .NET User Group](https://www.meetup.com/London-NET-User-Group) on the 7th February 2018.  The slides for the talk can be found [here](https://gitpitch.com/gep13/CakeDemos/dotnetlondon#/).
+
+**NOTE:** If you want to see the code and demos that were provided at this presentation, please ensure you use the [dotnetlondon branch](https://github.com/gep13/CakeDemos/tree/dotnetlondon).
+
 # Running Demos with no external internet connection
 
 In order to run this demo, the following infrastructure needs to be in place (this is due to the fact that the demo is designed to be run offline, with no external network connection).

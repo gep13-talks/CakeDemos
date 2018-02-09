@@ -12,11 +12,6 @@
 
 ## Fit like i'day?
 
-+++
-
-## Is that a Mac?
-### WAT!
-
 ---
 
 @title[What is a Build?]

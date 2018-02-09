@@ -32,6 +32,10 @@ Demo Repository for showing usage of the [Cake](http://cakebuild.net/) build aut
 
 **NOTE:** If you want to see the code and demos that were provided at this presentation, please ensure you use the [dotnetoxford branch](https://github.com/gep13/CakeDemos/tree/dotnetoxford).
 
+* It was then given at [London .NET User Group](https://www.meetup.com/London-NET-User-Group) on the 7th February 2018.  The slides for the talk can be found [here](https://gitpitch.com/gep13/CakeDemos/dotnetlondon#/).
+
+**NOTE:** If you want to see the code and demos that were provided at this presentation, please ensure you use the [dotnetlondon branch](https://github.com/gep13/CakeDemos/tree/dotnetlondon).
+
 * It was then given at [.Net Sheffield](https://www.meetup.com/dotnetsheff) on the 8th February 2018.  The slides for the talk can be found [here](https://gitpitch.com/gep13/CakeDemos/dotnetsheff#/).
 
 **NOTE:** If you want to see the code and demos that were provided at this presentation, please ensure you use the [dotnetoxford branch](https://github.com/gep13/CakeDemos/tree/dotnetsheff).

@@ -40,6 +40,10 @@ Demo Repository for showing usage of the [Cake](http://cakebuild.net/) build aut
 
 **NOTE:** If you want to see the code and demos that were provided at this presentation, please ensure you use the [dotnetsheff branch](https://github.com/gep13/CakeDemos/tree/dotnetsheff).
 
+* It was then given at [.Net York](https://www.meetup.com/dotnetYork) on the 9th February 2018.  The slides for the talk can be found [here](https://gitpitch.com/gep13/CakeDemos/dotnetyork#/).
+
+**NOTE:** If you want to see the code and demos that were provided at this presentation, please ensure you use the [dotnetyork branch](https://github.com/gep13/CakeDemos/tree/dotnetsheff).
+
 # Running Demos with no external internet connection
 
 In order to run this demo, the following infrastructure needs to be in place (this is due to the fact that the demo is designed to be run offline, with no external network connection).

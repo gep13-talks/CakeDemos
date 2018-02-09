@@ -32,6 +32,10 @@ Demo Repository for showing usage of the [Cake](http://cakebuild.net/) build aut
 
 **NOTE:** If you want to see the code and demos that were provided at this presentation, please ensure you use the [dotnetoxford branch](https://github.com/gep13/CakeDemos/tree/dotnetoxford).
 
+* It was then given at [.Net Sheffield](https://www.meetup.com/dotnetsheff) on the 8th February 2018.  The slides for the talk can be found [here](https://gitpitch.com/gep13/CakeDemos/dotnetsheff#/).
+
+**NOTE:** If you want to see the code and demos that were provided at this presentation, please ensure you use the [dotnetoxford branch](https://github.com/gep13/CakeDemos/tree/dotnetsheff).
+
 # Running Demos with no external internet connection
 
 In order to run this demo, the following infrastructure needs to be in place (this is due to the fact that the demo is designed to be run offline, with no external network connection).
@@ -60,7 +64,7 @@ In order to run this demo, the following infrastructure needs to be in place (th
   * Cake.NuGet
   * Cake.Testing
   * dapper
-  
+
 # Running Demos with external internet connection
 
 If you don't want to use a local setup, you will need to made some minor modifications to this repository:

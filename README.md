@@ -38,7 +38,7 @@ Demo Repository for showing usage of the [Cake](http://cakebuild.net/) build aut
 
 * It was then given at [.Net Sheffield](https://www.meetup.com/dotnetsheff) on the 8th February 2018.  The slides for the talk can be found [here](https://gitpitch.com/gep13/CakeDemos/dotnetsheff#/).
 
-**NOTE:** If you want to see the code and demos that were provided at this presentation, please ensure you use the [dotnetoxford branch](https://github.com/gep13/CakeDemos/tree/dotnetsheff).
+**NOTE:** If you want to see the code and demos that were provided at this presentation, please ensure you use the [dotnetsheff branch](https://github.com/gep13/CakeDemos/tree/dotnetsheff).
 
 # Running Demos with no external internet connection
 

@@ -42,7 +42,7 @@ Demo Repository for showing usage of the [Cake](http://cakebuild.net/) build aut
 
 * It was then given at [.Net York](https://www.meetup.com/dotnetYork) on the 9th February 2018.  The slides for the talk can be found [here](https://gitpitch.com/gep13/CakeDemos/dotnetyork#/).
 
-**NOTE:** If you want to see the code and demos that were provided at this presentation, please ensure you use the [dotnetyork branch](https://github.com/gep13/CakeDemos/tree/dotnetsheff).
+**NOTE:** If you want to see the code and demos that were provided at this presentation, please ensure you use the [dotnetyork branch](https://github.com/gep13/CakeDemos/tree/dotnetyork).
 
 # Running Demos with no external internet connection
 

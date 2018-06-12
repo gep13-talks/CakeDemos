@@ -3,14 +3,6 @@
 ## A Piece of Cake
 ### C# powered cross platform build automation
 
----
-
-@title[Disclaimers]
-## Disclaimers
-
-+++
-
-## Fit like i'day?
 
 ---
 

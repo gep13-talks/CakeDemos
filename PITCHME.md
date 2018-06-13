@@ -254,7 +254,7 @@ Fully agree with the concept of a polyglot developer, but from a strictly pragma
 
 @title[Source Code]
 ## Source Code
-### http://gep13.me/CakeDemos
+### https://gep13.me/CakeDemos
 
 ---
 
@@ -279,7 +279,7 @@ Email: gep13@gep13.co.uk
 
 Twitter: @gep13
 
-Web: http://www.gep13.co.uk
+Web: https://www.gep13.co.uk
 
 ---
 

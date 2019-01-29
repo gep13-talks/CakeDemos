@@ -19,7 +19,7 @@ Makes sure that each task is only run once.
 @title[Build Step]
 Typical Build Workflow
 
-![Build Step](assets/images/build-workflow-1.png)
+![Build Step](assets/img/build-workflow-1.png)
 
 +++
 
@@ -27,7 +27,7 @@ Typical Build Workflow
 Typical Build Workflow
 
 <!-- .slide: data-transition="none" -->
-![Package Restore Step](assets/images/build-workflow-2.png)
+![Package Restore Step](assets/img/build-workflow-2.png)
 
 +++
 
@@ -35,7 +35,7 @@ Typical Build Workflow
 Typical Build Workflow
 
 <!-- .slide: data-transition="none" -->
-![Unit Test Step](assets/images/build-workflow-3.png)
+![Unit Test Step](assets/img/build-workflow-3.png)
 
 +++
 
@@ -43,7 +43,7 @@ Typical Build Workflow
 Typical Build Workflow
 
 <!-- .slide: data-transition="none" -->
-![Clean Step](assets/images/build-workflow-4.png)
+![Clean Step](assets/img/build-workflow-4.png)
 
 +++
 
@@ -51,7 +51,7 @@ Typical Build Workflow
 Typical Build Workflow
 
 <!-- .slide: data-transition="none" -->
-![Test Coverage Step](assets/images/build-workflow-5.png)
+![Test Coverage Step](assets/img/build-workflow-5.png)
 
 +++
 
@@ -59,7 +59,7 @@ Typical Build Workflow
 Typical Build Workflow
 
 <!-- .slide: data-transition="none" -->
-![Code Inspection Step](assets/images/build-workflow-6.png)
+![Code Inspection Step](assets/img/build-workflow-6.png)
 
 +++
 
@@ -67,7 +67,7 @@ Typical Build Workflow
 Typical Build Workflow
 
 <!-- .slide: data-transition="none" -->
-![Package Step](assets/images/build-workflow-7.png)
+![Package Step](assets/img/build-workflow-7.png)
 
 +++
 
@@ -75,7 +75,7 @@ Typical Build Workflow
 Typical Build Workflow
 
 <!-- .slide: data-transition="none" -->
-![Publish Step](assets/images/build-workflow-8.png)
+![Publish Step](assets/img/build-workflow-8.png)
 
 ---
 
@@ -98,12 +98,12 @@ Some history/information:
 +++
 
 @title[Not this Cake]
-![Not this Cake](assets/images/not-this-cake.png)
+![Not this Cake](assets/img/not-this-cake.png)
 
 +++
 
 @title[Cake Logo]
-![Cake Logo](assets/images/cake-logo.png)
+![Cake Logo](assets/img/cake-logo.png)
 
 +++
 
@@ -125,49 +125,49 @@ Script Processing to make sure things work the same on both.
 +++
 
 @title[Start with Cake.exe/dll]
-![Start with Cake.exe or Cake.dll](assets/images/how-does-cake-work-1.png)
+![Start with Cake.exe or Cake.dll](assets/img/how-does-cake-work-1.png)
 
 +++
 
 @title[Available from lots of places]
 <!-- .slide: data-transition="none" -->
-![Available from lots of sources](assets/images/how-does-cake-work-2.png)
+![Available from lots of sources](assets/img/how-does-cake-work-2.png)
 
 +++
 
 @title[Add Configuration]
 <!-- .slide: data-transition="none" -->
-![Pass in arguments and configuration](assets/images/how-does-cake-work-3.png)
+![Pass in arguments and configuration](assets/img/how-does-cake-work-3.png)
 
 +++
 
 @title[Pass your build script]
 <!-- .slide: data-transition="none" -->
-![Pass in your build script](assets/images/how-does-cake-work-4.png)
+![Pass in your build script](assets/img/how-does-cake-work-4.png)
 
 +++
 
 @title[Add pre-processor directives]
 <!-- .slide: data-transition="none" -->
-![Use some pre-processor directives](assets/images/how-does-cake-work-5.png)
+![Use some pre-processor directives](assets/img/how-does-cake-work-5.png)
 
 +++
 
 @title[Compile with Roslyn]
 <!-- .slide: data-transition="none" -->
-![Roslyn used to compile your script](assets/images/how-does-cake-work-6.png)
+![Roslyn used to compile your script](assets/img/how-does-cake-work-6.png)
 
 +++
 
 @title[Script will be executed]
 <!-- .slide: data-transition="none" -->
-![Script will be executed](assets/images/how-does-cake-work-7.png)
+![Script will be executed](assets/img/how-does-cake-work-7.png)
 
 +++
 
 @title[Tada!]
 <!-- .slide: data-transition="none" -->
-![Output can be anything you want](assets/images/how-does-cake-work-8.png)
+![Output can be anything you want](assets/img/how-does-cake-work-8.png)
 
 ---
 
@@ -177,7 +177,7 @@ Script Processing to make sure things work the same on both.
 +++
 
 @title[Lots of tools!]
-![Cake Tools](assets/images/tools-you-can-use-with-cake.png)
+![Cake Tools](assets/img/tools-you-can-use-with-cake.png)
 
 Note:
 Black ones are built in and ship with Cake.
@@ -198,7 +198,7 @@ There are aliases that span across:
 @title[Okay, but why do I need it?]
 ## Okay, but why do I need it?
 
-![Why do I need Cake?](assets/images/but-why-do-i-need-it.png)
+![Why do I need Cake?](assets/img/but-why-do-i-need-it.png)
 
 Note:
 Talk about compiling directly out of Visual Studio:
@@ -213,7 +213,7 @@ This is prone to human error, and not repeatable or maintainable as the complica
 @title[We build Cake with Cake on...]
 ## We build Cake with Cake on...
 
-![Build Cake with Cake](assets/images/build-cake-with-cake.png)
+![Build Cake with Cake](assets/img/build-cake-with-cake.png)
 
 Note:
 9 Different CI Servers.
@@ -248,7 +248,7 @@ Fully agree with the concept of a polyglot developer, but from a strictly pragma
 
 @title[Let's bake some Cake]
 ## Let's bake some Cake
-![What we will do in demo](assets/images/what-we-will-do-in-demo.png)
+![What we will do in demo](assets/img/what-we-will-do-in-demo.png)
 
 ---
 

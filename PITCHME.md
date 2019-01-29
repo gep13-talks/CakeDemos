@@ -275,7 +275,7 @@ Mention laptop setup:
 
 Feel free to get in touch
 
-Email: gep13@gep13.co.uk
+Email: gary@cakebuild.net
 
 Twitter: @gep13
 

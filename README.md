@@ -43,3 +43,7 @@ Demo Repository for showing usage of the [Cake](https://cakebuild.net/) build au
 * It was then given at [.Net York](https://www.meetup.com/dotnetYork) on the 9th February 2018.  The slides for the talk can be found [here](https://gitpitch.com/gep13/CakeDemos/dotnetyork#/).
 
 **NOTE:** If you want to see the code and demos that were provided at this presentation, please ensure you use the [dotnetyork branch](https://github.com/gep13/CakeDemos/tree/dotnetyork).
+
+* It was then given at [HaintonDotNet - North East](https://www.meetup.com/HaintonDotNetNE/) on the 29th January 2019.  The slides for the talk can be found [here](https://gitpitch.com/gep13/CakeDemos/newcastle2019#/).
+
+**NOTE:** If you want to see the code and demos that were provided at this presentation, please ensure you use the [newcastle2019 branch](https://github.com/gep13/CakeDemos/tree/newcastle2019).

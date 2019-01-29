@@ -259,9 +259,10 @@ This is prone to human error, and not repeatable or maintainable as the complica
 ![Build Cake with Cake](assets/img/build-cake-with-cake.png)
 
 Note:
-9 Different CI Servers.
+8 Different CI Services.
 
 3 Different Operating Systems.
+
 ---
 
 @title[Can't I just use...]
@@ -309,13 +310,6 @@ Fully agree with the concept of a polyglot developer, but from a strictly pragma
 
 @title[Demos]
 ## Demos
-
-Note:
-Mention laptop setup:
-
-* Working in offline mode
-* All commands are still executed as they would be if doing it in reallife
-* Only slightly modified bootstrapper and configuration file
 
 ---?color=#7FDBFF
 @title[Who Am I? - Gary Ewan Park]

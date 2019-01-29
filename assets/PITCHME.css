@@ -1,0 +1,31 @@
+.reveal section img {
+  border: 0;
+  box-shadow: none;
+}
+
+.demo-box-pad #boxed-text {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.bio image {
+  width: 30%;
+}
+
+.bio-name {
+  text-align: center;
+}
+
+.bio-contact {
+  color: white;
+  font-size: 0.7em !important;
+  font-weight: bolder !important;
+}
+
+.twitter-blue {
+  color: #00aced;
+}
+
+.choco-blue {
+  color: #80B5E3;
+}

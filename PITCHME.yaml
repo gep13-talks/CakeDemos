@@ -1,4 +1,58 @@
-theme : beige
-theme-override : assets/css/PITCHME.css
+#
+# The Template Settings
+#
+# The default settings below are optimized for this template.
+# Override settings with your own custom values as needed.
+#
+# For further details, see https://gitpitch.com/docs/settings.
+#
+
+published : true
+
+#
+# Theme Setting
+# Doc: https://gitpitch.com/docs/settings/theme
+#
+theme : simple
+
+#
+# Theme-Override Setting
+# Doc: https://gitpitch.com/docs/settings/custom-theme
+#
+theme-override : assets/PITCHME.css
+
+#
+# Footnote Setting
+# Doc: https://gitpitch.com/docs/settings/footnote
+#
 footnote : "@gep13"
+
+#
+# Highlight (Code) Setting
+# Doc: https://gitpitch.com/docs/settings/highlight
+#
+highlight : moon
+
+#
+# Layout Setting
+# Doc: https://gitpitch.com/docs/settings/layout
+#
+layout : center
+
+#
+# Transition Setting
+# This template uses GitPitch Snap-Layouts extensively. For this
+# reason THIS VALUE SHOULD NOT BE MODIFIED. See:
+# https://gitpitch.com/docs/layout-features/snap-layout-slide-transitions
+#
+transition : none
+
+#
+# Twitter Card Settings
+# Doc: https://gitpitch.com/docs/settings/twitter-card
+#
+title : "A Piece of Cake - C# powered cross platform build automation"
+description : "In this session we will start with a standard .Net Solution and incrementally add a build and orchestration script to compile the application, run unit tests, perform static analysis, package the application, and more, using the C# skills that you may already have."
+thumbnail :
+
 gatoken : UA-20926037-2

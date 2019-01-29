@@ -3,11 +3,29 @@
 ## A Piece of Cake
 ### C# powered cross platform build automation
 
-
 ---
+@title[Slides and Code]
 
-@title[What is a Build?]
-## What is a Build?
+## Slides
+
+### https://gep13.me/CakeSlides
+
+
+## Code
+
+### https://gep13.me/CakeDemos
+
+---?image=assets/img/bg/black.jpg&position=left&size=35% 100%
+@title[What is a build?]
+
+@snap[west h4-white]
+#### Question
+@snapend
+
+@snap[east span-80]
+#### What is a
+## @css[text-gold text-bold](Build )@fa[question]
+@snapend
 
 Note:
 Cake creates a Directed acyclic graph of each of the tasks.
@@ -77,9 +95,17 @@ Typical Build Workflow
 <!-- .slide: data-transition="none" -->
 ![Publish Step](assets/img/build-workflow-8.png)
 
----
+---?image=assets/img/bg/black.jpg&position=left&size=35% 100%
+@title[What is Cake?]
 
-## What is Cake?
+@snap[west h4-white]
+#### Question
+@snapend
+
+@snap[east span-80]
+#### What is
+## @css[text-gold text-bold](Cake )@fa[question]
+@snapend
 
 Note:
 Full disclosure, I am one of three maintainers of the Cake project on GitHub.
@@ -105,22 +131,32 @@ Some history/information:
 @title[Cake Logo]
 ![Cake Logo](assets/img/cake-logo.png)
 
-+++
+---?image=assets/img/bg/blue.jpg&position=left&size=35% 100%
+@title[Cake]
 
-@title[A Definition...]
-### A Definition...
+@snap[west h4-white]
+#### Answer
+@snapend
 
-"Cake (C# Make) is a cross platform build automation system with a C# DSL to do things like compiling code, copy files/folders, running unit tests, compress files and build NuGet packages.”
+@snap[east span-70]
+@quote[Cake, C# Make, is a cross platform build automation system with a C# DSL to do things like compiling code, copy files/folders, running unit tests, compress files and build NuGet packages.](Cake Website)
 
 Note:
 Built using Roslyn, allowing execution on both Windows, OS X and Linux.
 
 Script Processing to make sure things work the same on both.
 
----
-
+---?image=assets/img/bg/black.jpg&position=left&size=35% 100%
 @title[How does Cake work?]
-## How does Cake work?
+
+@snap[west h4-white]
+#### Question
+@snapend
+
+@snap[east span-80]
+#### How does Cake
+## @css[text-gold text-bold](work )@fa[question]
+@snapend
 
 +++
 
@@ -169,10 +205,17 @@ Script Processing to make sure things work the same on both.
 <!-- .slide: data-transition="none" -->
 ![Output can be anything you want](assets/img/how-does-cake-work-8.png)
 
----
+---?image=assets/img/bg/black.jpg&position=left&size=35% 100%
+@title[What tools can I use with Cake?]
 
-@title[What tools am I able to use with Cake?]
-## What tools am I able to use with Cake?
+@snap[west h4-white]
+#### Question
+@snapend
+
+@snap[east span-80]
+#### What tools can I use with
+## @css[text-gold text-bold](Cake )@fa[question]
+@snapend
 
 +++
 
@@ -236,7 +279,7 @@ Note:
 - MSBuild |
 - NAnt |
 - PSake |
-- Bau |
+- Nuke |
 - ? |
 
 Note:
@@ -251,9 +294,15 @@ Fully agree with the concept of a polyglot developer, but from a strictly pragma
 ![What we will do in demo](assets/img/what-we-will-do-in-demo.png)
 
 ---
+@title[Slides and Code]
 
-@title[Source Code]
-## Source Code
+## Slides
+
+### https://gep13.me/CakeSlides
+
+
+## Code
+
 ### https://gep13.me/CakeDemos
 
 ---
@@ -267,6 +316,37 @@ Mention laptop setup:
 * Working in offline mode
 * All commands are still executed as they would be if doing it in reallife
 * Only slightly modified bootstrapper and configuration file
+
+---?color=#7FDBFF
+@title[Who Am I? - Gary Ewan Park]
+
+@snap[north-west]
+Who am I?
+@snapend
+
+@snap[west span-65]
+Senior Software Engineer @ Chocolatey Software
+<br>
+<br>
+![Chocolatey](assets/img/chocolatey.png)
+![MVP Logo](assets/img/mvp.jpg)
+![Cake Build](assets/img/cake.png)
+@snapend
+
+@snap[east span-30]
+![Gary Ewan Park](assets/img/gary-avatar.png)
+<br>
+
+Gary Ewan Park
+
+@snapend
+
+@snap[south-west bio-contact]
+@fa[twitter twitter-blue]&nbsp;&nbsp;gep13&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+@fa[github text-black]&nbsp;&nbsp;github.com/gep13&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+@fa[home text-blue]&nbsp;&nbsp;gep13.co.uk&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+@fa[envelope choco-blue]&nbsp;&nbsp;gary@cakebuild.net
+@snapend
 
 ---
 

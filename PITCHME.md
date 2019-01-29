@@ -115,11 +115,11 @@ Some history/information:
 - Supports the most common tools out of the box
 - Cross Platform (Windows OS X Linux)
 - Small but slowly growing
-  - almost 900 Pull Requests
-  - 134 Contributors
-  - over 200 third party addins
-  - 1575 Stars
-  - Over 1.5 million downloads
+  - almost 1000 Pull Requests
+  - 161 Contributors
+  - over 230 third party addins
+  - over 2000 Stars
+  - Over 2.9 million downloads
 
 +++
 

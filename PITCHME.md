@@ -108,7 +108,7 @@ Typical Build Workflow
 @snapend
 
 Note:
-Full disclosure, I am one of three maintainers of the Cake project on GitHub.
+Full disclosure, I am one of seven maintainers of the Cake project on GitHub.
 
 Some history/information:
 - Open Source

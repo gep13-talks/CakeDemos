@@ -237,7 +237,9 @@ _Pvt_Extensions
 
 # Cake specific
 tools/*
-!tools/packages.config
+build.ps1
+build.sh
+build.cake
 
 BuildArtifacts/
 

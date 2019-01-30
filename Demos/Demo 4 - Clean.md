@@ -8,4 +8,4 @@
 
 * Save the file and run the script
 
-* Show the BuilfArtifacts folder being cleaned up as first part of the build
+* Show the BuildArtifacts folder being cleaned up as first part of the build

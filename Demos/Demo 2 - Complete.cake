@@ -7,7 +7,7 @@ Task("DotNet-Core-Package-Restore")
     DotNetCoreRestore(
         "./Source/Gep13.Cake.Sample.WebApplication",
         new DotNetCoreRestoreSettings {
-            Sources = new[] { "http://localhost:8081/repository/cake/" }
+            PackagesDirectory = "./Source/packages"
         }
     );
 });

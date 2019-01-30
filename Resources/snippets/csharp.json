@@ -11,7 +11,7 @@
 			"",
 			"Task(\"Default\")",
 			"\t.IsDependentOn(\"DotNet-Core-Package-Restore\");",
-			"",  
+			"",
 			"RunTarget(target);"
 		]
 	},
@@ -60,14 +60,15 @@
 		"body": [
 			"Task(\"Publish\")",
     		"\t.IsDependentOn(\"Build\")",
-    		"\t.Does(() =>", 
+    		"\t.Does(() =>",
 			"{",
    			"\tvar settings = new DotNetCorePublishSettings {",
          	"\t\tConfiguration = configuration,",
-         	"\t\tOutputDirectory = \"./BuildArtifacts/\"",
+					"\t\tOutputDirectory = \"./BuildArtifacts/\",",
+					"\t\tNoRestore = true",
      		"\t};",
 			"",
-     		"\tDotNetCorePublish(\"./Source/Gep13.Cake.Sample.WebApplication/Gep13.Cake.Sample.WebApplication.csproj\", settings);", 
+     		"\tDotNetCorePublish(\"./Source/Gep13.Cake.Sample.WebApplication/Gep13.Cake.Sample.WebApplication.csproj\", settings);",
 			"});"
 		]
 	},

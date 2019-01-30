@@ -47,3 +47,7 @@ Demo Repository for showing usage of the [Cake](https://cakebuild.net/) build au
 * It was then given at [HaintonDotNet - North East](https://www.meetup.com/HaintonDotNetNE/) on the 29th January 2019.  The slides for the talk can be found [here](https://gitpitch.com/gep13/CakeDemos/newcastle2019#/).
 
 **NOTE:** If you want to see the code and demos that were provided at this presentation, please ensure you use the [newcastle2019 branch](https://github.com/gep13/CakeDemos/tree/newcastle2019).
+
+* It was then given at [HaintonDotNet - North East](https://www.meetup.com/HaintonDotNetNE/) on the 30th January 2019.  The slides for the talk can be found [here](https://gitpitch.com/gep13/CakeDemos/middlesborough2019#/).
+
+**NOTE:** If you want to see the code and demos that were provided at this presentation, please ensure you use the [middlesborough2019 branch](https://github.com/gep13/CakeDemos/tree/middlesborough2019).

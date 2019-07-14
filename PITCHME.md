@@ -1,28 +1,31 @@
 @title[A Piece of Cake]
 
-## A Piece of Cake
+@snap[midpoint h3-blue span-100]
+# A Piece of Cake
 ### C# powered cross platform build automation
+@snapend
 
 ---
 @title[Slides and Code]
 
 ## Slides
 
-### https://gep13.me/CakeSlides
+#### https://gep13.me/CakeSlides
 
+@fa[plus-square fa-2x fa-pad-icon text-gold]
 
 ## Code
 
-### https://gep13.me/CakeDemos
+#### https://gep13.me/CakeDemos
 
----?image=assets/img/bg/black.jpg&position=left&size=35% 100%
+---?color=linear-gradient(90deg, black 25%, white 25%)
 @title[What is a build?]
 
-@snap[west h4-white]
-#### Question
+@snap[west h1-white]
+# Q
 @snapend
 
-@snap[east span-80]
+@snap[east span-65]
 #### What is a
 ## @css[text-gold text-bold](Build )@fa[question]
 @snapend
@@ -32,9 +35,28 @@ Cake creates a Directed acyclic graph of each of the tasks.
 
 Makes sure that each task is only run once.
 
+---?color=linear-gradient(90deg, #5289F7 25%, white 25%)
+@title[Typical Build Workflow]
+
+@snap[north-east text-05 text-gray]
+Q. What is Cake?
+@snapend
+
+@snap[west h1-white]
+# A
+@snapend
+
+@snap[east span-70]
+## Typical Build Workflow
+@snapend
+
 +++
 
 @title[Build Step]
+@snap[north-east text-05 text-gray]
+Q. What is a Build?
+@snapend
+
 Typical Build Workflow
 
 ![Build Step](assets/img/build-workflow-1.png)
@@ -42,6 +64,10 @@ Typical Build Workflow
 +++
 
 @title[Package Restore Step]
+@snap[north-east text-05 text-gray]
+Q. What is a Build?
+@snapend
+
 Typical Build Workflow
 
 <!-- .slide: data-transition="none" -->
@@ -50,6 +76,10 @@ Typical Build Workflow
 +++
 
 @title[Unit Test Step]
+@snap[north-east text-05 text-gray]
+Q. What is a Build?
+@snapend
+
 Typical Build Workflow
 
 <!-- .slide: data-transition="none" -->
@@ -58,6 +88,10 @@ Typical Build Workflow
 +++
 
 @title[Clean Step]
+@snap[north-east text-05 text-gray]
+Q. What is a Build?
+@snapend
+
 Typical Build Workflow
 
 <!-- .slide: data-transition="none" -->
@@ -66,6 +100,10 @@ Typical Build Workflow
 +++
 
 @title[Test Coverage Step]
+@snap[north-east text-05 text-gray]
+Q. What is a Build?
+@snapend
+
 Typical Build Workflow
 
 <!-- .slide: data-transition="none" -->
@@ -74,6 +112,10 @@ Typical Build Workflow
 +++
 
 @title[Code Inspection Step]
+@snap[north-east text-05 text-gray]
+Q. What is a Build?
+@snapend
+
 Typical Build Workflow
 
 <!-- .slide: data-transition="none" -->
@@ -82,6 +124,10 @@ Typical Build Workflow
 +++
 
 @title[Package Step]
+@snap[north-east text-05 text-gray]
+Q. What is a Build?
+@snapend
+
 Typical Build Workflow
 
 <!-- .slide: data-transition="none" -->
@@ -90,19 +136,23 @@ Typical Build Workflow
 +++
 
 @title[Publish Step]
+@snap[north-east text-05 text-gray]
+Q. What is a Build?
+@snapend
+
 Typical Build Workflow
 
 <!-- .slide: data-transition="none" -->
 ![Publish Step](assets/img/build-workflow-8.png)
 
----?image=assets/img/bg/black.jpg&position=left&size=35% 100%
+---?color=linear-gradient(90deg, black 25%, white 25%)
 @title[What is Cake?]
 
-@snap[west h4-white]
-#### Question
+@snap[west h1-white]
+# Q
 @snapend
 
-@snap[east span-80]
+@snap[east span-65]
 #### What is
 ## @css[text-gold text-bold](Cake )@fa[question]
 @snapend
@@ -124,18 +174,30 @@ Some history/information:
 +++
 
 @title[Not this Cake]
+@snap[north-east text-05 text-gray]
+Q. What is Cake?
+@snapend
+
 ![Not this Cake](assets/img/not-this-cake.png)
 
 +++
 
 @title[Cake Logo]
+@snap[north-east text-05 text-gray]
+Q. What is Cake?
+@snapend
+
 ![Cake Logo](assets/img/cake-logo.png)
 
----?image=assets/img/bg/blue.jpg&position=left&size=35% 100%
+---?color=linear-gradient(90deg, #5289F7 25%, white 25%)
 @title[Cake]
 
-@snap[west h4-white]
-#### Answer
+@snap[north-east text-05 text-gray]
+Q. What is Cake?
+@snapend
+
+@snap[west h1-white]
+# A
 @snapend
 
 @snap[east span-70]
@@ -146,14 +208,14 @@ Built using Roslyn, allowing execution on both Windows, OS X and Linux.
 
 Script Processing to make sure things work the same on both.
 
----?image=assets/img/bg/black.jpg&position=left&size=35% 100%
+---?color=linear-gradient(90deg, black 25%, white 25%)
 @title[How does Cake work?]
 
-@snap[west h4-white]
-#### Question
+@snap[west h1-white]
+# Q
 @snapend
 
-@snap[east span-80]
+@snap[east span-65]
 #### How does Cake
 ## @css[text-gold text-bold](work )@fa[question]
 @snapend
@@ -161,58 +223,90 @@ Script Processing to make sure things work the same on both.
 +++
 
 @title[Start with Cake.exe/dll]
+@snap[north-east text-05 text-gray]
+Q. How does Cake work?
+@snapend
+
 ![Start with Cake.exe or Cake.dll](assets/img/how-does-cake-work-1.png)
 
 +++
 
 @title[Available from lots of places]
+@snap[north-east text-05 text-gray]
+Q. How does Cake work?
+@snapend
+
 <!-- .slide: data-transition="none" -->
 ![Available from lots of sources](assets/img/how-does-cake-work-2.png)
 
 +++
 
 @title[Add Configuration]
+@snap[north-east text-05 text-gray]
+Q. How does Cake work?
+@snapend
+
 <!-- .slide: data-transition="none" -->
 ![Pass in arguments and configuration](assets/img/how-does-cake-work-3.png)
 
 +++
 
 @title[Pass your build script]
+@snap[north-east text-05 text-gray]
+Q. How does Cake work?
+@snapend
+
 <!-- .slide: data-transition="none" -->
 ![Pass in your build script](assets/img/how-does-cake-work-4.png)
 
 +++
 
 @title[Add pre-processor directives]
+@snap[north-east text-05 text-gray]
+Q. How does Cake work?
+@snapend
+
 <!-- .slide: data-transition="none" -->
 ![Use some pre-processor directives](assets/img/how-does-cake-work-5.png)
 
 +++
 
 @title[Compile with Roslyn]
+@snap[north-east text-05 text-gray]
+Q. How does Cake work?
+@snapend
+
 <!-- .slide: data-transition="none" -->
 ![Roslyn used to compile your script](assets/img/how-does-cake-work-6.png)
 
 +++
 
 @title[Script will be executed]
+@snap[north-east text-05 text-gray]
+Q. How does Cake work?
+@snapend
+
 <!-- .slide: data-transition="none" -->
 ![Script will be executed](assets/img/how-does-cake-work-7.png)
 
 +++
 
 @title[Tada!]
+@snap[north-east text-05 text-gray]
+Q. How does Cake work?
+@snapend
+
 <!-- .slide: data-transition="none" -->
 ![Output can be anything you want](assets/img/how-does-cake-work-8.png)
 
----?image=assets/img/bg/black.jpg&position=left&size=35% 100%
+---?color=linear-gradient(90deg, black 25%, white 25%)
 @title[What tools can I use with Cake?]
 
-@snap[west h4-white]
-#### Question
+@snap[west h1-white]
+# Q
 @snapend
 
-@snap[east span-80]
+@snap[east span-65]
 #### What tools can I use with
 ## @css[text-gold text-bold](Cake )@fa[question]
 @snapend
@@ -220,6 +314,10 @@ Script Processing to make sure things work the same on both.
 +++
 
 @title[Lots of tools!]
+@snap[north-east text-05 text-gray]
+Q. What tools can I use with Cake?
+@snapend
+
 ![Cake Tools](assets/img/tools-you-can-use-with-cake.png)
 
 Note:
@@ -265,23 +363,20 @@ Note:
 
 ---
 
-@title[Can't I just use...]
-## Can't I just use...
-
-+++
-
 <!-- .slide: data-transition="none" -->
 @title[Alternative Build Tools]
 ## Can't I just use...
 
+@ul[text-08]
 - FAKE
-- MAKE |
-- CMake |
-- MSBuild |
-- NAnt |
-- PSake |
-- Nuke |
-- ? |
+- MAKE
+- CMake
+- MSBuild
+- NAnt
+- PSake
+- Nuke
+- ?
+@ulend
 
 Note:
 You can use any of these that you want.
@@ -299,14 +394,15 @@ Fully agree with the concept of a polyglot developer, but from a strictly pragma
 
 ## Slides
 
-### https://gep13.me/CakeSlides
+#### https://gep13.me/CakeSlides
 
+@fa[plus-square fa-2x fa-pad-icon text-gold]
 
 ## Code
 
-### https://gep13.me/CakeDemos
+#### https://gep13.me/CakeDemos
 
----
+---?color=beige
 
 @title[Demos]
 ## Demos
@@ -357,12 +453,14 @@ Web: https://www.gep13.co.uk
 
 ---
 
-@title[Resources]
-## Resources
+@title[Learn More]
+## Learn More
 
+@ul[text-08](false)
 * Cake Documentation - https://cakebuild.net/docs/
 * Source Code - https://github.com/cake-build/cake
 * Presentations - https://cakebuild.net/docs/resources/presentations
 * Podcasts - https://cakebuild.net/docs/resources/podcasts
 * Videos - https://cakebuild.net/docs/resources/videos
 * Blog Posts - https://cakebuild.net/docs/resources/blogs
+@ulend

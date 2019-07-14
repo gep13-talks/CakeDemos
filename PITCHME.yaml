@@ -13,7 +13,8 @@ published : true
 # Theme Setting
 # Doc: https://gitpitch.com/docs/settings/theme
 #
-theme : simple
+theme : template
+theme-headline : [ "Raleway", "#111111", "none"]
 
 #
 # Theme-Override Setting
@@ -55,4 +56,8 @@ title : "A Piece of Cake - C# powered cross platform build automation"
 description : "In this session we will start with a standard .Net Solution and incrementally add a build and orchestration script to compile the application, run unit tests, perform static analysis, package the application, and more, using the C# skills that you may already have."
 thumbnail :
 
+logo: assets/img/cake-logo.png
+
 gatoken : UA-20926037-2
+
+remote-control : true

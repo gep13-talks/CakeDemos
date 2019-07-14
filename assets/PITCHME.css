@@ -1,13 +1,3 @@
-.reveal section img {
-  border: 0;
-  box-shadow: none;
-}
-
-.demo-box-pad #boxed-text {
-  padding-top: 1em;
-  padding-bottom: 1em;
-}
-
 .bio image {
   width: 30%;
 }
@@ -18,7 +8,7 @@
 
 .bio-contact {
   color: white;
-  font-size: 0.7em !important;
+  font-size: 0.6em !important;
   font-weight: bolder !important;
 }
 
@@ -28,4 +18,8 @@
 
 .choco-blue {
   color: #80B5E3;
+}
+
+.fa-pad-icon {
+  padding: .8em 0 0.5em 0;
 }

@@ -6,6 +6,9 @@
 @snapend
 
 ---
+@title[Sponsors]
+![Sponsors](assets/img/sponsors.png)
+---
 @title[Slides and Code]
 
 ## Slides

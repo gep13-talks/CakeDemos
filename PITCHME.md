@@ -38,11 +38,11 @@ Cake creates a Directed acyclic graph of each of the tasks.
 
 Makes sure that each task is only run once.
 
----?color=linear-gradient(90deg, #5289F7 25%, white 25%)
++++?color=linear-gradient(90deg, #5289F7 25%, white 25%)
 @title[Typical Build Workflow]
 
 @snap[north-east text-05 text-gray]
-Q. What is Cake?
+Q. What is a Build?
 @snapend
 
 @snap[west h1-white]
@@ -185,14 +185,14 @@ Q. What is Cake?
 
 +++
 
-@title[Cake Logo]
+@title[Cake]
 @snap[north-east text-05 text-gray]
 Q. What is Cake?
 @snapend
 
 ![Cake Logo](assets/img/cake-logo.png)
 
----?color=linear-gradient(90deg, #5289F7 25%, white 25%)
++++?color=linear-gradient(90deg, #5289F7 25%, white 25%)
 @title[Cake]
 
 @snap[north-east text-05 text-gray]
@@ -205,6 +205,7 @@ Q. What is Cake?
 
 @snap[east span-70]
 @quote[Cake, C# Make, is a cross platform build automation system with a C# DSL to do things like compiling code, copy files/folders, running unit tests, compress files and build NuGet packages.](Cake Website)
+@snapend
 
 Note:
 Built using Roslyn, allowing execution on both Windows, OS X and Linux.
@@ -221,6 +222,22 @@ Script Processing to make sure things work the same on both.
 @snap[east span-65]
 #### How does Cake
 ## @css[text-gold text-bold](work )@fa[question]
+@snapend
+
++++?color=linear-gradient(90deg, #5289F7 25%, white 25%)
+@title[It's not magic!]
+
+@snap[north-east text-05 text-gray]
+Q. How does Cake work?
+@snapend
+
+@snap[west h1-white]
+# A
+@snapend
+
+@snap[midpoint span-70]
+## It's not
+![It's not magic!](assets/img/magic.gif)
 @snapend
 
 +++
@@ -314,14 +331,20 @@ Q. How does Cake work?
 ## @css[text-gold text-bold](Cake )@fa[question]
 @snapend
 
-+++
++++?color=linear-gradient(90deg, #5289F7 25%, white 25%)
 
 @title[Lots of tools!]
 @snap[north-east text-05 text-gray]
 Q. What tools can I use with Cake?
 @snapend
 
+@snap[west h1-white]
+# A
+@snapend
+
+@snap[east span-70]
 ![Cake Tools](assets/img/tools-you-can-use-with-cake.png)
+@snapend
 
 Note:
 Black ones are built in and ship with Cake.
@@ -337,12 +360,32 @@ There are aliases that span across:
   * Chat Systems
   * Publishing
 
----
-
+---?color=linear-gradient(90deg, black 25%, white 25%)
 @title[Okay, but why do I need it?]
-## Okay, but why do I need it?
 
+@snap[west h1-white]
+# Q
+@snapend
+
+@snap[east span-65]
+#### Okay, but why do I
+## @css[text-gold text-bold](need it )@fa[question]
+@snapend
+
++++?color=linear-gradient(90deg, #5289F7 25%, white 25%)
+
+@title[Lots of tools!]
+@snap[north-east text-05 text-gray]
+Q. Okay, but why do I need it?
+@snapend
+
+@snap[west h1-white]
+# A
+@snapend
+
+@snap[east span-70]
 ![Why do I need Cake?](assets/img/but-why-do-i-need-it.png)
+@snapend
 
 Note:
 Talk about compiling directly out of Visual Studio:
@@ -352,7 +395,7 @@ Talk about compiling directly out of Visual Studio:
 
 This is prone to human error, and not repeatable or maintainable as the complication of the application increases
 
----
++++
 
 @title[We build Cake with Cake on...]
 ## We build Cake with Cake on...

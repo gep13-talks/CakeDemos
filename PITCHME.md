@@ -160,20 +160,6 @@ Typical Build Workflow
 ## @css[text-gold text-bold](Cake )@fa[question]
 @snapend
 
-Note:
-Full disclosure, I am one of seven maintainers of the Cake project on GitHub.
-
-Some history/information:
-- Open Source
-- Supports the most common tools out of the box
-- Cross Platform (Windows OS X Linux)
-- Small but slowly growing
-  - almost 1000 Pull Requests
-  - 161 Contributors
-  - over 230 third party addins
-  - over 2000 Stars
-  - Over 2.9 million downloads
-
 +++
 
 @title[Not this Cake]
@@ -191,6 +177,20 @@ Q. What is Cake?
 @snapend
 
 ![Cake Logo](assets/img/cake-logo.png)
+
+Note:
+Full disclosure, I am one of seven maintainers of the Cake project on GitHub.
+
+Some history/information:
+- Open Source
+- Supports the most common tools out of the box
+- Cross Platform (Windows OS X Linux)
+- Small but slowly growing
+  - almost 1100 Pull Requests
+  - 172 Contributors
+  - 275 third party addins
+  - over 2200 Stars
+  - Over 3.8 million downloads
 
 +++?color=linear-gradient(90deg, #5289F7 25%, white 25%)
 @title[Cake]

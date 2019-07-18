@@ -2,7 +2,11 @@
 
 Demo Repository for showing usage of the [Cake](https://cakebuild.net/) build automation and orchestration tool.
 
-# Presentations
+## Presentations
+
+The latest version of the slides for this talk can found here: [![GitPitch](https://gitpitch.com/assets/badge.svg)](https://gitpitch.com/gep13-talks/CakeDemos/master#/)
+
+If you are interested in viewing the slides for a specific version of the talk, you can use the links in the table below.
 
 | Date                     | Conference/User Group                                                                                           | Code                                                                                  | Slides                                                                                                               |
 |--------------------------|-----------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|

@@ -1,6 +1,6 @@
 # A Piece of Cake - C# powered cross platform build automation
 
-Have you ever wanted to create a build script for your application, but been faced with learning a new language, or DSL, or writing more XML than any person should ever need to?
+Have you ever wanted to create a build script for your application, but been faced with learning a new language, or DSL, or writing more YAML than any person should ever need to?
 
 Have you ever wanted to create a build script that will work cross platform?
 
